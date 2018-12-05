@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     
     $("#section2 .product-info").hide();
-    $("#section2").css('background-image', 'url(../../images/section2/section2-bg.png)');
+    $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
         
     //////////////////////////////////////////////////////////////////dropdown select
     $('.selectbox').each(function () {
