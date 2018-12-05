@@ -2,7 +2,11 @@ $(document).ready(function() {
     
     
     $("#section2 .product-info").hide();
-    $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+    function setBg() {
+        $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+        return false;
+    }
+    setBg();
         
     //////////////////////////////////////////////////////////////////dropdown select
     $('.selectbox').each(function () {
