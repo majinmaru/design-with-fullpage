@@ -56,7 +56,7 @@ $(document).ready(function() {
             $(".product-image").addClass('hidden');
             $(".product-image").removeClass('hidden').addClass('appear');
             */
-            $(".product-image").attr('src', 'app/assets/images/section2/' + $watchName + '.png');
+            $(".product-image").attr('src', '../../images/section2/' + $watchName + '.png');
         });
         $('document').click(function () {
             $newSelect.removeClass('active');
