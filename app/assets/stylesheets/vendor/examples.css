@@ -233,3 +233,14 @@ p{
 	padding: 0 0 5px 0;
 }
 
+
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
+
