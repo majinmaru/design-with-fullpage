@@ -7,20 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <title>FitMyRoom</title>
+    <title>::Jaeger-leCoultre::</title>
     
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				menu: '#menu',
-				anchors: ['firstPage', 'SecondPage', '3rdPage', '4thPage'],
-				navigation: true,
-				navigationPosition: 'left',
-				navigationTooltips: ['INTRO', 'HISTORY', 'PRODUCT', 'ISSUES']
-			});
-		});
-	</script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">    
+    <link rel="stylesheet" href="app/assets/stylesheets/css/home.css">
+    
 </head>
 
 <body>
@@ -238,7 +229,25 @@
 		</div>
 	</div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vendor/assets/javascripts/jqeury.fullpage.js"></script>
+    <script type="text/javascript" src="vendor/assets/javascripts/jqeury-ui.js"></script>
+    <script type="text/javascript" src="vendor/assets/javascripts/jqeury.scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="app/assets/javascripts/section1.js"></script>
+    <script type="text/javascript" src="app/assets/javascripts/section2.js"></script>
+    <script type="text/javascript" src="app/assets/javascripts/section3.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				anchors: ['firstPage', 'SecondPage', '3rdPage', '4thPage'],
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['INTRO', 'HISTORY', 'PRODUCT', 'ISSUES']
+			});
+		});
+	</script>
     
 </body>
 
