@@ -3,15 +3,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     
     <title>::Jaeger-leCoultre::</title>
     
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/assets/stylesheets/jquery.fullpage.css">
+    <link rel="stylesheet" href="vendor/assets/stylesheets/examples.css">      
     <link rel="stylesheet" href="app/assets/stylesheets/css/home.css">
-    
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="vendor/assets/javascripts/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="vendor/assets/javascripts/jquery.fullpage.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				anchors: ['firstPage', 'SecondPage', '3rdPage', '4thPage'],
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['INTRO', 'HISTORY', 'PRODUCT', 'ISSUES']
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -20,27 +40,27 @@
 	
 	<nav id="menu" class="top-nav">
 		<div class="logo-box">
-			<a data-menuanchor="firstPage" href="#firstPage"><img class="logo" src="/assets/jaeger-leCoultre-logo.svg"></a>
+			<a data-menuanchor="firstPage" href="#firstPage"><img class="logo" src="app/assets/images/jaeger-leCoultre-logo.svg"></a>
 		</div>
 		<ul class="sns">
-			<li><img class="icon" src="/assets/insta.png">Instagram</li>
-			<li><img class="icon" src="/assets/facebook.png">Facebook</li>
-			<li><img class="icon" src="/assets/twitter.png">Twitter</li>
-			<li><img class="icon" src="/assets/email.png">Email</li>
+			<li><img class="icon" src="app/assets/images/insta.png">Instagram</li>
+			<li><img class="icon" src="app/assets/images/facebook.png">Facebook</li>
+			<li><img class="icon" src="app/assets/images/twitter.png">Twitter</li>
+			<li><img class="icon" src="app/assets/images/email.png">Email</li>
 		</ul>
 	</nav>
 
 	<div class="section" id="section0">
 		<div class="intro">
 			<div class="clock">
-				<img src="/assets/section0/intro-bg-center.png"/>
+				<img src="app/assets/images/section0/intro-bg-center.png"/>
 			</div>
 		</div>
 	</div>
 	<div class="section" id="section1">
 		<div class="history">
 			<div class="history-image-box">
-				<img class="history-image" src="/assets/section1/1833.png">
+				<img class="history-image" src="app/assets/images/section1/1833.png">
 			</div>
 			<div class="history-description">
 				<p id="1833">앙트완 르쿨트르(Antoine LeCoultre)가 스위스 쥐라 국경지대에 예거 르쿨트르의 최초 시계공방을 설립했습니다.</p>
@@ -139,7 +159,7 @@
 			</select>
 			<div class="back">BACK</div>
 			<div class="product-image-box">
-				<img class="product-image" src="/assets/section2/reverso.png">
+				<img class="product-image" src="app/assets/images/section2/reverso.png">
 			</div>
 			<div class="product-name-nav">
 				<div class="product-nav left"></div>
@@ -181,7 +201,7 @@
 		</div>
 		
 		<div class="company-name-box">
-			<img class="company-name" src="/assets/section2/company-name.png">
+			<img class="company-name" src="app/assets/images/section2/company-name.png">
 		</div>
 	</div>
 	<div class="section" id="section3">
@@ -229,25 +249,9 @@
 		</div>
 	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="vendor/assets/javascripts/jqeury.fullpage.js"></script>
-    <script type="text/javascript" src="vendor/assets/javascripts/jqeury-ui.js"></script>
-    <script type="text/javascript" src="vendor/assets/javascripts/jqeury.scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="app/assets/javascripts/section1.js"></script>
-    <script type="text/javascript" src="app/assets/javascripts/section2.js"></script>
-    <script type="text/javascript" src="app/assets/javascripts/section3.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				menu: '#menu',
-				anchors: ['firstPage', 'SecondPage', '3rdPage', '4thPage'],
-				navigation: true,
-				navigationPosition: 'left',
-				navigationTooltips: ['INTRO', 'HISTORY', 'PRODUCT', 'ISSUES']
-			});
-		});
-	</script>
+<script type="text/javascript" src="app/assets/javascripts/section1.js"></script>
+<script type="text/javascript" src="app/assets/javascripts/section2.js"></script>
+<script type="text/javascript" src="app/assets/javascripts/section3.js"></script>
     
 </body>
 

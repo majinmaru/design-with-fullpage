@@ -2,6 +2,7 @@ $(document).ready(function() {
     
     
     $("#section2 .product-info").hide();
+    $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
         
     //////////////////////////////////////////////////////////////////dropdown select
     $('.selectbox').each(function () {
@@ -55,7 +56,7 @@ $(document).ready(function() {
             $(".product-image").addClass('hidden');
             $(".product-image").removeClass('hidden').addClass('appear');
             */
-            $(".product-image").attr('src', '/assets/section2/' + $watchName + '.png');
+            $(".product-image").attr('src', 'app/assets/images/section2/' + $watchName + '.png');
         });
         $('document').click(function () {
             $newSelect.removeClass('active');
@@ -66,14 +67,14 @@ $(document).ready(function() {
     
     $("#section2 .product-list .list-part li").click(function(e) {
         e.stopPropagation();
-        var $getProductName = $(this).attr('id');  //ex: reverso
+        var $getProductName = $(this).attr('id');
         var $productNameId = '#watch-' + $getProductName;
         var $getProductIndex = $(this).index();
         
         $("div.new-select").text($(".selectbox").children('option').eq($getProductIndex).text());
         $($productNameId).addClass('active');
         $($productNameId).siblings().removeClass('active');
-        $(".product-image").attr('src', '/assets/section2/' + $getProductName + '.png');
+        $(".product-image").attr('src', 'app/assets/images/section2/' + $getProductName + '.png');
         
         $("#section2 .product-list").hide()
         $("#section2").css('background-image', 'none');
@@ -92,7 +93,7 @@ $(document).ready(function() {
         $("#section2 .product-info").hide();
         $("#section2 .product-list").show();
         $("#section2 .product-list").removeClass('disappear').addClass('active');
-        $("#section2").css('background-image', 'url(/assets/section2/section2-bg.png)');
+        $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
         $(".company-name-box").show();
     });
     
