@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     
     $("#section2 .product-info").hide();
-    $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+    $("#section2").css('background-image', 'url(../../images/section2/section2-bg.png)');
         
     //////////////////////////////////////////////////////////////////dropdown select
     $('.selectbox').each(function () {
@@ -56,7 +56,7 @@ $(document).ready(function() {
             $(".product-image").addClass('hidden');
             $(".product-image").removeClass('hidden').addClass('appear');
             */
-            $(".product-image").attr('src', 'app/assets/images/section2/' + $watchName + '.png');
+            $(".product-image").attr('src', '../../images/section2/' + $watchName + '.png');
         });
         $('document').click(function () {
             $newSelect.removeClass('active');
