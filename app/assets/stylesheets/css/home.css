@@ -2,8 +2,6 @@
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
 @import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
-@import url(vendor/assets/stylesheets/jquery.fullpage.css);
-@import url(vendor/assets/stylesheets/examples.css);
 @import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
 @import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
 @import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo");
