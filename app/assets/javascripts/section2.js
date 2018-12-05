@@ -56,7 +56,7 @@ $(document).ready(function() {
             $(".product-image").addClass('hidden');
             $(".product-image").removeClass('hidden').addClass('appear');
             */
-            $(".product-image").attr('src', '../../images/section2/' + $watchName + '.png');
+            $(".product-image").attr('src', 'app/assets/images/section2/' + $watchName + '.png');
         });
         $('document').click(function () {
             $newSelect.removeClass('active');
@@ -93,7 +93,7 @@ $(document).ready(function() {
         $("#section2 .product-info").hide();
         $("#section2 .product-list").show();
         $("#section2 .product-list").removeClass('disappear').addClass('active');
-        $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+        $("#section2").css('background-image', 'url(../../images/section2/section2-bg.png)');
         $(".company-name-box").show();
     });
     
