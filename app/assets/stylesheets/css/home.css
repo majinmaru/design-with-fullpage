@@ -112,8 +112,8 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("app/assets/font/copperplate-gothic-light.woff") format("woff"); }
-@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("app/assets/font/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 .section { background-color: #041419; }
 
 #section0 .intro { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; width: 100%; height: 100%; background-image: url("../../images/section0/intro-bg.png"); background-size: cover; background-position: center; }
@@ -151,7 +151,7 @@ template { display: none; }
 
 #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip { -webkit-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; width: auto; opacity: 1; }
 
-@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("app/assets/font/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 @keyframes from-bottom { 0% { opacity: 0; bottom: -3px; }
   50% { opacity: 0.5; bottom: -1.5px; }
   100% { opacity: 1; bottom: 0; } }
@@ -170,7 +170,7 @@ template { display: none; }
 #section1 .timeline li:hover .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
 #section1 .timeline li.active .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
 
-@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("app/assets/font/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 @keyframes list-disappear { 0% { opacity: 1; }
   99% { opacity: 0; }
   100% { opacity: 0; } }
@@ -229,7 +229,7 @@ template { display: none; }
 #section2 .company-name-box .company-name { width: 100%; }
 #section2 .company-name-box.hidden { display: none; }
 
-@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("app/assets/font/copperplate-gothic-light.woff") format("woff"); }
+@font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 @keyframes card-appear { 0% { opacity: 0; }
   100% { opacity: 1; } }
 .section { background-color: #041419; }
