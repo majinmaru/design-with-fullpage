@@ -41,7 +41,7 @@
 #section2 {
     background-image: url('app/assets/images/section2/section2-bg.png');
     background-size: 25%;
-    background-position: 95% bottom;
+    background-position: 90% bottom;
     background-repeat: no-repeat;
     .product-info{
         width: 70%;
@@ -226,31 +226,28 @@
             display: block;
         }
     }
-    .product-list{
-        @include flexbox();
+    .product-list{        
         @include transition-three-sec();
-        width: 60%;
-        height: 55vh;
-        margin: 20vh auto 5vh auto;
+        width: 55%;
+        height: auto;
+        margin: 20vh auto 3vh auto;
+        display: block;
         border-left: 2px solid $white;
         border-bottom: 2px solid $white;
         .list-part {
-            @include flexbox();
-            @include flex-wrap(wrap);
-            width: 70%;
+            width: 100%;
             height: 55vh;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
+            display: block;
+            padding-bottom: 0.5rem;            
             .list {
                 @include box-sizing(border-box);
                 @include transition-three-sec();
-                width: 50%;
+                width: 35%;
                 border-bottom: 2px solid transparent;
                 display: block;
                 padding: 1rem;
-                margin: 1rem 0 1rem 2rem;
+                float: left;
+                margin: 1rem 0 1rem 2.5rem;
                 text-align: left;
                 cursor: pointer;
                 .ko-list {
@@ -297,7 +294,7 @@
         display: block;
         width: 20%;
         float: right;
-        margin-right: 20%;
+        margin-right: 22.5%;
         .company-name {
             width: 100%;
         }

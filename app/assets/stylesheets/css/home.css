@@ -127,29 +127,32 @@ template { display: none; }
 
 .sns { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; -ms-flex-wrap: nowrap; flex-wrap: nowrap; width: 10%; float: right; margin-top: 5rem; margin-right: 6%; }
 .sns li { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 0.5rem; height: 0.5rem; border-radius: 0.5rem; border: 1px solid #fff; margin: -0.25rem 0 0 -0.25rem; background: transparent; text-indent: -9999px; }
+.sns li span { position: relative; display: inline; color: rgba(255, 255, 255, 0.5); font-size: 0.8rem; text-align: center; font-family: 'Copperplate Gothic Light'; width: 3rem; height: 1rem; }
 .sns li .icon { width: 0; height: 0; }
 .sns li:hover { width: 2rem; height: 2rem; margin: -1rem 0 0 -1rem; cursor: pointer; }
-.sns li:hover .icon { width: 100%; height: 100%; display: block; }
+.sns li:hover .icon { width: 100%; height: 100%; display: block; margin-bottom: 0.2rem; }
 
 #fp-nav.left { left: 5%; }
 
 #fp-nav ul, .fp-slidesNav ul { margin: 0; padding: 0; }
 
-#fp-nav ul li, .fp-slidesNav ul li { display: block; width: 14px; height: 13px; margin: 0; margin-top: 2rem; position: relative; }
+#fp-nav ul li, .fp-slidesNav ul li { display: block; width: 0.4rem; height: 2rem; margin: 0; margin-top: 1.5rem; position: relative; }
 
 .fp-slidesNav ul li { display: inline-block; }
 
 #fp-nav ul li a, .fp-slidesNav ul li a { display: block; position: relative; z-index: 1; width: 100%; height: 100%; cursor: pointer; text-decoration: none; }
 
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span { height: 12px; width: 12px; border-radius: 0; }
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span { height: 1.2rem; width: 1.2rem; border-radius: 0; margin: -0.2rem 0px 0px -0.2rem; }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span { border-radius: 0; position: absolute; z-index: 1; height: 4px; width: 4px; border: 1px solid #fff; background: transparent; left: 50%; top: 50%; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+#fp-nav ul li a span, .fp-slidesNav ul li a span { border-radius: 0; position: absolute; z-index: 1; height: 1.2rem; width: 0.4rem; border: 1px solid #fff; background: transparent; left: 50%; top: 50%; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span { width: 10px; height: 10px; margin: -5px 0px 0px -5px; }
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span { width: 1.2rem; height: 1.2rem; margin: -0.2rem 0px 0px -0.2rem; }
 
 #fp-nav ul li .fp-tooltip { position: absolute; top: 1px; color: #fff; font-size: 14px; font-family: 'Copperplate Gothic Light'; white-space: nowrap; max-width: 220px; overflow: hidden; display: block; opacity: 0; width: 0; cursor: pointer; }
 
 #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip { -webkit-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; width: auto; opacity: 1; }
+
+#fp-nav ul li .fp-tooltip.left { left: 1.5rem; top: 1rem; }
 
 @font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 @keyframes from-bottom { 0% { opacity: 0; bottom: -3px; }
@@ -181,7 +184,7 @@ template { display: none; }
   100% { opacity: 1; bottom: 0; } }
 .section { background-color: #041419; }
 
-#section2 { background-image: url("app/assets/images/section2/section2-bg.png"); background-size: 25%; background-position: 95% bottom; background-repeat: no-repeat; }
+#section2 { background-image: url("app/assets/images/section2/section2-bg.png"); background-size: 25%; background-position: 90% bottom; background-repeat: no-repeat; }
 #section2 .product-info { width: 70%; height: 65vh; margin: 10vh auto 5vh auto; display: block; }
 #section2 .product-info .selectbox { width: 32%; height: 3rem; }
 #section2 .product-info .hide-select { display: none; }
@@ -213,9 +216,9 @@ template { display: none; }
 #section2 .product-info .product-more-button span { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; font-family: 'Nanum Myeongjo', serif; font-size: 1rem; color: #fff; padding: 0.5rem 1rem; border: 1px solid #fff; cursor: pointer; }
 #section2 .product-info .product-more-button span:hover { letter-spacing: 0.2rem; }
 #section2 .product-info.active { -webkit-animation: list-appear 0.2s; animation: list-appear 0.2s; display: block; }
-#section2 .product-list { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 60%; height: 55vh; margin: 20vh auto 5vh auto; border-left: 2px solid #fff; border-bottom: 2px solid #fff; }
-#section2 .product-list .list-part { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 70%; height: 55vh; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-#section2 .product-list .list-part .list { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 50%; border-bottom: 2px solid transparent; display: block; padding: 1rem; margin: 1rem 0 1rem 2rem; text-align: left; cursor: pointer; }
+#section2 .product-list { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 55%; height: auto; margin: 20vh auto 3vh auto; display: block; border-left: 2px solid #fff; border-bottom: 2px solid #fff; }
+#section2 .product-list .list-part { width: 100%; height: 55vh; display: block; padding-bottom: 0.5rem; }
+#section2 .product-list .list-part .list { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 35%; border-bottom: 2px solid transparent; display: block; padding: 1rem; float: left; margin: 1rem 0 1rem 2.5rem; text-align: left; cursor: pointer; }
 #section2 .product-list .list-part .list .ko-list { font-family: 'Nanum Myeongjo', serif; color: rgba(255, 255, 255, 0.5); font-size: 1rem; display: block; margin-bottom: 0.3rem; }
 #section2 .product-list .list-part .list .ko-list.active { color: #fff; }
 #section2 .product-list .list-part .list .en-list { font-family: 'Copperplate Gothic Light'; color: rgba(255, 255, 255, 0.25); font-size: 0.7rem; display: block; }
@@ -225,7 +228,7 @@ template { display: none; }
 #section2 .product-list .list-part .list:hover .en-list { color: rgba(255, 255, 255, 0.5); }
 #section2 .product-list.disappear { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-animation: list-disappear 0.3s; animation: list-disappear 0.3s; }
 #section2 .product-list.active { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-animation: list-appear 0.3s; animation: list-appear 0.3s; }
-#section2 .company-name-box { display: block; width: 20%; float: right; margin-right: 20%; }
+#section2 .company-name-box { display: block; width: 20%; float: right; margin-right: 22.5%; }
 #section2 .company-name-box .company-name { width: 100%; }
 #section2 .company-name-box.hidden { display: none; }
 
@@ -241,7 +244,7 @@ template { display: none; }
 #section3 .issues .card-nav.right { -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); float: right; right: 15%; }
 #section3 .issues .card-nav.right.hidden { display: none; }
 #section3 .issues .card-container { width: 55%; height: auto; display: block; overflow: hidden; margin-left: 22.5%; cursor: pointer; }
-#section3 .issues .card-container .card { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; display: none; width: 100%; height: auto; text-align: center; border: 1px solid #fff; background-size: cover; background-repeat: no-repeat; }
+#section3 .issues .card-container .card { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; background-position: center; display: none; width: 100%; height: auto; min-height: 55vh; max-height: 65vh; text-align: center; border: 1px solid #fff; background-size: cover; background-repeat: no-repeat; }
 #section3 .issues .card-container .card.active { display: block; }
 #section3 .issues .card-container .card .card-align { position: relative; display: block; padding: 5rem 0; }
 #section3 .issues .card-container .card .card-align .card-date { font-family: 'Copperplate Gothic Light'; color: #fff; font-size: 0.8rem; }

@@ -53,9 +53,12 @@
             .card {
                 @include box-sizing(border-box);
                 @include transition-three-sec();
+                background-position: center;
                 display: none;
                 width: 100%;
                 height: auto;
+                min-height: 55vh;
+                max-height: 65vh;
                 text-align: center;
                 border: 1px solid $white;
                 background-size: cover;
