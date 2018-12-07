@@ -310,7 +310,7 @@
         background-position: 115% bottom;
         .product-list {
             width: 85%;
-            margin: 10vh auto 3vh auto;
+            margin: 8vh auto 3vh auto;
             .list-part {
                 @include flexbox();
                 @include flex-wrap(wrap);
@@ -318,7 +318,7 @@
                 .list {
                     width: 100%;
                     text-align: left;
-                    padding: 1rem 0 0.7rem 1.5rem;
+                    padding: 0.5rem 0 0.7rem 1.5rem;
                     margin: 0;
                     .ko-list {
                         font-size: 0.9rem;

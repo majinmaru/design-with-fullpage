@@ -261,9 +261,9 @@ template { display: none; }
 #section2 .company-name-box.hidden { display: none; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) { #section2 { background-size: 55%; background-position: 115% bottom; }
-  #section2 .product-list { width: 85%; margin: 10vh auto 3vh auto; }
+  #section2 .product-list { width: 85%; margin: 8vh auto 3vh auto; }
   #section2 .product-list .list-part { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 75vh; }
-  #section2 .product-list .list-part .list { width: 100%; text-align: left; padding: 1rem 0 0.7rem 1.5rem; margin: 0; }
+  #section2 .product-list .list-part .list { width: 100%; text-align: left; padding: 0.5rem 0 0.7rem 1.5rem; margin: 0; }
   #section2 .product-list .list-part .list .ko-list { font-size: 0.9rem; }
   #section2 .product-list .list-part .list .en-list { font-size: 0.6rem; }
   #section2 .product-info { width: 85%; height: 70vh; position: relative; }
