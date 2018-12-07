@@ -304,7 +304,7 @@ template { display: none; }
 #section3 .footer p { color: rgba(255, 255, 255, 0.5); font-family: 'Copperplate Gothic Light'; font-size: 0.8rem; text-align: center; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) { #section3 .issues .card-container { width: 75%; margin-left: 12.5%; }
-  #section3 .issues .card-container .card { max-height: 62vh; }
+  #section3 .issues .card-container .card { max-height: 62vh; min-height: 47vh; }
   #section3 .issues .card-container .card .card-align { padding: 2rem 0; }
   #section3 .issues .card-container .card .card-align .card-title { width: 75%; font-size: 1rem; line-height: 1.7rem; }
   #section3 .issues .card-container .card .card-align .card-subtitle { width: 70%; font-size: 0.8rem; }
