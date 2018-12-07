@@ -162,10 +162,10 @@ template { display: none; }
 
 @media screen and (min-width: 320px) and (max-width: 768px) { @keyframes show-nav-sns-list { 0% { opacity: 0; }
     100% { opacity: 1; } }
-  .logo-box { position: relative; display: inline-block; width: 35%; height: auto; margin-left: 32.5%; margin-top: 2.5rem; }
+  .logo-box { position: relative; display: inline-block; width: 35%; height: auto; margin-left: 32.5%; margin-top: 1.5rem; }
   .logo-box .logo { width: 100%; }
   #fp-nav { display: none; }
-  .mobile-nav-sns { width: 2rem; height: 2rem; border-radius: 2rem; float: right; margin-top: 2.5rem; margin-right: 2rem; display: inline-block; border: 1px solid #fff; }
+  .mobile-nav-sns { width: 2rem; height: 2rem; border-radius: 2rem; float: right; margin-top: 1.5rem; margin-right: 2rem; display: inline-block; border: 1px solid #fff; }
   .mobile-nav-sns .show-nav-sns { display: inline; font-family: 'Copperplate Gothic Light'; font-size: 1rem; color: #fff; text-align: center; position: relative; top: 22%; left: 30%; }
   .nav-sns-list { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: none; width: 80%; margin: 7% 10%; padding: 2rem 0; border: 1px solid #fff; background-color: #041419; border-radius: 0.3rem; box-shadow: 0 0 4rem black; }
   .nav-sns-list li:first-child { margin-top: 2rem; }
@@ -194,9 +194,9 @@ template { display: none; }
 #section1 .timeline li:hover .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
 #section1 .timeline li.active .year { color: #fff; border-bottom: 0.3rem solid #fff; text-shadow: 2px 2px 4px #010405; top: -2px; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) { #section1 .history { width: 80%; margin-left: 10%; display: block; top: 17%; background-size: 0; }
+@media screen and (min-width: 320px) and (max-width: 768px) { #section1 .history { width: 80%; margin-left: 10%; display: block; top: 14%; background-size: 0; }
   #section1 .history .history-image-box { width: 55%; margin-left: 22.5%; }
-  #section1 .history .history-description { width: 100%; margin-top: 1rem; }
+  #section1 .history .history-description { width: 100%; margin-top: 1.3rem; }
   #section1 .history .history-description p { font-size: 0.8rem; line-height: 1.8rem; }
   #section1 .timeline { width: 80%; margin-left: 10%; bottom: 5%; }
   #section1 .timeline li { margin-right: 1rem; margin-left: 1rem; margin-bottom: 1.5rem; }
@@ -260,6 +260,25 @@ template { display: none; }
 #section2 .company-name-box .company-name { width: 100%; }
 #section2 .company-name-box.hidden { display: none; }
 
+@media screen and (min-width: 320px) and (max-width: 768px) { #section2 { background-size: 55%; background-position: 115% bottom; }
+  #section2 .product-list { width: 85%; margin: 10vh auto 3vh auto; }
+  #section2 .product-list .list-part { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 75vh; }
+  #section2 .product-list .list-part .list { width: 100%; text-align: left; padding: 1rem 0 0.7rem 1.5rem; margin: 0; }
+  #section2 .product-list .list-part .list .ko-list { font-size: 0.9rem; }
+  #section2 .product-list .list-part .list .en-list { font-size: 0.6rem; }
+  #section2 .product-info { width: 85%; height: 70vh; position: relative; }
+  #section2 .product-info .select { width: 60%; }
+  #section2 .product-info .new-select { padding: 0; }
+  #section2 .product-info .options { background-color: #041419; }
+  #section2 .product-info .options li { padding: 0.5rem 0; margin: 0.3rem 0; border-bottom: 0.5px solid rgba(255, 255, 255, 0.2); }
+  #section2 .product-info .product-image-box { width: 78%; position: absolute; margin-left: 11%; top: 13%; }
+  #section2 .product-info .product-name-nav { position: absolute; bottom: 13%; }
+  #section2 .product-info .product-name-nav .product-name { width: 75%; }
+  #section2 .product-info .product-name-nav .product-name .product-ko-name { font-size: 1rem; }
+  #section2 .product-info .product-name-nav .product-nav { width: 1.3rem; height: 1.3rem; }
+  #section2 .product-info .product-more-button { position: absolute; bottom: 0; width: 100%; }
+  #section2 .product-info .back { width: 4rem; }
+  #section2 .company-name-box { display: none; } }
 @font-face { font-family: 'Copperplate Gothic Light'; font-style: normal; font-weight: normal; src: local("app/assets/font/Copperplate Gothic Light"), url("../../font/copperplate-gothic-light.woff") format("woff"); }
 @keyframes card-appear { 0% { opacity: 0; }
   100% { opacity: 1; } }
@@ -283,5 +302,15 @@ template { display: none; }
 #section3 .issues .card-container .card:hover .card-align .card-title { -webkit-text-decoration: underline solid #fff; text-decoration: underline solid #fff; }
 #section3 .footer { width: 100%; position: absolute; bottom: 3%; }
 #section3 .footer p { color: rgba(255, 255, 255, 0.5); font-family: 'Copperplate Gothic Light'; font-size: 0.8rem; text-align: center; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) { #section3 .issues .card-container { width: 75%; margin-left: 12.5%; }
+  #section3 .issues .card-container .card { max-height: 62vh; }
+  #section3 .issues .card-container .card .card-align { padding: 2rem 0; }
+  #section3 .issues .card-container .card .card-align .card-title { width: 75%; font-size: 1rem; line-height: 1.7rem; }
+  #section3 .issues .card-container .card .card-align .card-subtitle { width: 70%; font-size: 0.8rem; }
+  #section3 .issues .card-nav { top: initial; bottom: -14%; }
+  #section3 .issues .card-nav.right { right: 30%; }
+  #section3 .issues .card-nav.left { left: 30%; }
+  .footer p { font-size: 0.5rem; } }
 
 /*# sourceMappingURL=home.css.map */

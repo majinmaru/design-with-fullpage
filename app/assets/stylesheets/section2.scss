@@ -305,5 +305,79 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    
+    #section2 {
+        background-size: 55%;
+        background-position: 115% bottom;
+        .product-list {
+            width: 85%;
+            margin: 10vh auto 3vh auto;
+            .list-part {
+                @include flexbox();
+                @include flex-wrap(wrap);
+                height: 75vh;
+                .list {
+                    width: 100%;
+                    text-align: left;
+                    padding: 1rem 0 0.7rem 1.5rem;
+                    margin: 0;
+                    .ko-list {
+                        font-size: 0.9rem;
+                    }
+                    .en-list {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+        .product-info {
+            width: 85%;
+            height: 70vh;
+            position: relative;
+            .select{
+                width: 60%;
+            }
+            .new-select {
+                padding: 0;
+            }
+            .options {
+                background-color: $main-color;
+                li {
+                    padding: 0.5rem 0;
+                    margin: 0.3rem 0;
+                    border-bottom: 0.5px solid $white-800;
+                }
+            }
+            .product-image-box {
+                width: 78%;
+                position: absolute;
+                margin-left: 11%;
+                top: 13%;
+            }
+            .product-name-nav {
+                position: absolute;
+                bottom: 13%;
+                .product-name {
+                    width: 75%;
+                    .product-ko-name {
+                        font-size: 1rem;
+                    }
+                }
+                .product-nav {
+                    width: 1.3rem;
+                    height: 1.3rem;
+                }
+            }
+            .product-more-button {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            .back {
+                width: 4rem;
+            }
+        }
+        .company-name-box {
+            display: none;
+        }
+    }
 }
