@@ -297,6 +297,7 @@ template { display: none; }
 #section3 .issues .card-container .card .card-align .card-date { font-family: 'Copperplate Gothic Light'; color: #fff; font-size: 0.8rem; }
 #section3 .issues .card-container .card .card-align .card-title { margin: 2rem auto 0 auto; width: 50%; font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 1.2rem; line-height: 2rem; }
 #section3 .issues .card-container .card .card-align .card-subtitle { -o-text-overflow: ellipsis; text-overflow: ellipsis; margin: 2rem auto 0 auto; width: 40%; font-family: 'Nanum Myeongjo', serif; color: rgba(255, 255, 255, 0.5); font-size: 1rem; line-height: 1.5rem; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 3rem; }
+#section3 .issues .card-container .card .card-align .card-content { display: none; }
 #section3 .issues .card-container .card .card-align .card-button { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; display: inline-block; margin-top: 2rem; padding: 0.5rem 1rem; font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 0.8rem; border: 1px solid #fff; }
 #section3 .issues .card-container .card .card-align .card-button:hover { letter-spacing: 0.3rem; }
 #section3 .issues .card-container .card:hover .card-align .card-title { -webkit-text-decoration: underline solid #fff; text-decoration: underline solid #fff; }
@@ -312,5 +313,8 @@ template { display: none; }
   #section3 .issues .card-nav.right { right: 30%; }
   #section3 .issues .card-nav.left { left: 30%; }
   .footer p { font-size: 0.5rem; } }
+@media screen and (min-width: 1440px) { #section3 .issues .card-container .card .card-align .card-title { width: 70%; }
+  #section3 .issues .card-container .card .card-align .card-subtitle { width: 60%; color: rgba(255, 255, 255, 0.25); -webkit-line-clamp: 3; height: 4.5rem; }
+  #section3 .issues .card-container .card .card-align .card-content { -o-text-overflow: ellipsis; text-overflow: ellipsis; margin: 2rem auto 0 auto; width: 50%; display: block; color: rgba(255, 255, 255, 0.5); font-family: 'Nanum Myeongjo', serif; font-size: 1rem; line-height: 1.5rem; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 3rem; } }
 
 /*# sourceMappingURL=home.css.map */
