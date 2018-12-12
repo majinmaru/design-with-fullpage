@@ -9,37 +9,40 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> 
 	<link rel="stylesheet" type="text/css" href="../vendor/stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/css/home.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div class="menu">
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+			</div>
 			<div class="logo">
 				<img src="images/index/logo.png">
 			</div>
-			<div class="search">
-				<div class="search-icon">
+			<div class="search-icon">
 					<img src="images/index/search-icon.png">
-				</div>
-				<div class="search-area">
-					<div class="search-box">
-						<label class="search-label" for="search">검색</label>
-						<input class="search-input" type="text">
-						<div class="search-button"></div>
-					</div>
-					<span class="search-popular">인기검색어 : #크리스마스 #테이블세일</span>
-				</div>
-			</div>			
+			</div>												
 		</header>
+		<div class="search-area">
+			<div class="search-box">
+				<label class="search-label" for="search">검색</label>
+				<input class="search-input" type="text">
+				<div class="search-button"></div>
+			</div>
+			<span class="search-popular">인기검색어 : #크리스마스 #테이블세일</span>
+		</div>
 		<nav class="nav">
 			<ul class="gnb">
-				<li>룩마이룸</li>
-				<div class="square"></div>
-				<li>신상룸</li>
-				<div class="square"></div>
-				<li>세일룸</li>
-				<div class="square"></div>
-				<li>마이룸</li>
-				</ul>
+				<li id="first" class="gnb-list">룩마이룸</li>				
+				<li id="second" class="gnb-list">신상룸</li>				
+				<li id="third" class="gnb-list">세일룸</li>				
+				<li id="fourth" class="gnb-list">마이룸</li>
+			</ul>
+			<div class="nav-slider"></div>
 			<ul class="lnb">
 				<li id="first-page">
 					<ul>
@@ -79,6 +82,7 @@
 			<div class="slide"></div>
 			<div class="slide"></div>
 		</section>
+		<div id="deco1" class="background"></div>
 		<section class="text-ad"></section>
 		<section class="page-one">
 			<h1>#룩마이룸 #지금 핫한 인테리어는?</h1>
@@ -124,6 +128,7 @@
 				</div>
 			</div>
 		</section>
+		<div id="deco2" class="background"></div>
 		<section class="page-two">
 			<h1>#신상룸 #새로나온 가구 및 소품은?</h1>
 			<div class="second-page-slider">
@@ -174,6 +179,7 @@
 				</div>
 			</div>
 		</section>
+		<div id="deco3" class="background"></div>
 		<section class="page-three">
 			<h1>#세일룸 #고급의자 거저 가져가시게</h1>
 			<div class="third-page-slider">
@@ -239,5 +245,6 @@
 			<p>ALL RIGHTS RESERVED BY YUJIN HWANG</p>
 		</footer>
 	</div>
+	<script type="text/javascript" src="javascripts/index.js"></script>
 </body>
 </html>

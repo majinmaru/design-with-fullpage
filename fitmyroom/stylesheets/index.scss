@@ -11,128 +11,197 @@ body {
 	overflow: hidden;
 }
 .header {
+	@include flexbox();
 	width: 100%;
-	background-color: $main-bg;
+	background-color: transparent;
+	.menu {
+		width: 2.3rem;
+		height: 2.2rem;
+		margin-top: 0.3rem;
+		display: inline-block;
+		margin-left: 1rem;
+		visibility: hidden;
+		.menu-line {
+			width: 1.9rem;
+			height: 0.2rem;
+			border-radius: 0.2rem;
+			display: block;
+			background-color: $sub-purple2;
+			margin: 0.4rem;
+		}
+	}
 	.logo {
-		width: 86%;
+		width: auto;
 		height: 2rem;
-		position: fixed;
-		padding-top: 0.5rem;
-		padding-left: 1rem;
+		display: inline-block;
+		margin: 0.5rem auto 0 auto;
 		background-color: $main-bg;
-		z-index: 999;
 		img {
 			height: 100%;
 		}
 	}
-	.search {
-		.search-icon {
-			width: 14%;
-			height: 2rem;
-			position: fixed;
-			right: 0;
-			padding-top: 0.3rem;
-			padding-bottom: 0.2rem;
-			background-color: $main-bg;
-			z-index: 999;
-			img {
-				height: 100%;
-			}
+	.search-icon {
+		width: 14%;
+		height: 2rem;
+		display: inline-block;
+		padding-top: 0.3rem;
+		background-color: $main-bg;		
+		img {
+			height: 100%;
 		}
-		.search-area {
-			@include search-background();
-			width: 100%;
-			height: 80%;
-			position: absolute;
-			top: 2.5rem;
-			z-index: 10;
+	}
+	&.sticky {
+		@include transform(translateY(2.5rem));
+		@include transition(transform 0.3s ease, background-color 0.6s ease);
+		position: fixed;
+		background-color: $main-bg;
+	    width: 100%;
+	    left: 0;
+	    top: -2.5rem;
+  	    z-index: 999;
+ 	    border-top: 0;
+	}			
+}
+.search-area {
+	@include search-background();
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 2.5rem;
+	z-index: 10;
+	display: none;
+	.search-box {
+		width: 70%;
+		height: 3rem;
+		border-radius: 3rem;
+		background-color: $main-bg;
+		position: relative;
+		top: 3rem;
+		margin: 0 auto;
+		display: block;
+		.search-label{
 			display: none;
-			.search-box {
-				width: 70%;
-				height: 3rem;
-				border-radius: 3rem;
-				background-color: $main-bg;
-				position: relative;
-				top: 3rem;
-				margin: 0 auto;
-				display: block;
-				.search-label{
-					display: none;
-				}
-				.search-input{
-					border: none;
-					font-size: 1rem;
-					background: transparent;
-					color: $sub-purple2;
-					position: relative;
-					top: 0.5rem;
-					left: 1rem;
-					line-height: 2rem;
-					width: 70%;
-				}
-				.search-button {
-					@include box-sizing(border-box);
-					width: 2.4rem;
-					height: 2.4rem;
-					border: 1px solid $sub-purple2;
-					border-radius: 3rem;
-					position: relative;
-					margin: 0.3rem;
-					float: right;
-					cursor: pointer;
-					background-image: url('../../images/index/search-arrow.png');
-					background-position: center;
-					background-size: cover;
-				}
-			}
-			.search-popular {
-				color: $white;
-				position: inherit;
-				font-size: 1rem;
-				font-weight: 500;
-				margin-top: 4rem;
-				margin-left: 15%;
-			}
 		}
-	}	
+		.search-input{
+			border: none;
+			font-size: 1rem;
+			background: transparent;
+			color: $sub-purple2;
+			position: relative;
+			top: 0.5rem;
+			left: 1rem;
+			line-height: 2rem;
+			width: 70%;
+		}
+		.search-button {
+			@include box-sizing(border-box);
+			width: 2.4rem;
+			height: 2.4rem;
+			border: 1px solid $sub-purple2;
+			border-radius: 3rem;
+			position: relative;
+			margin: 0.3rem;
+			float: right;
+			cursor: pointer;
+			background-image: url('../../images/index/search-arrow.png');
+			background-position: center;
+			background-size: cover;
+		}
+	}
+	.search-popular {
+		color: $white;
+		position: inherit;
+		font-size: 1rem;
+		font-weight: 500;
+		margin-top: 4rem;
+		margin-left: 15%;
+	}
 }
 .nav {
 	width: 100%;
 	position: relative;
-	top: 2.5rem;
 	.gnb {
 		@include flexbox();
 		@include justify-content(space-between);
 		@include nav-shadow();
 		@include box-sizing(border-box);
-		padding: 0 10%;
+		padding: 0 5%;
 		border-top: 2px solid $sub-purple2;
-		li {
+		.gnb-list {
 			font-weight: 700; 				
 			text-align: center;
 			font-family: 'NanumSquare', sans-serif;
 			font-size: 1rem;
 			color: $gray;
-			line-height: 2.5rem;
+			margin: 0.6rem auto 0.6rem auto;
 		}
-		.square {
-			@include transform(rotate(45deg));
-			width: 0.2rem;
-			height: 0.2rem;
-			border: 1px solid $sub-purple1;
-			display: inline-block;
-			position: relative;
-			top: 1.1rem;
+	}
+	.nav-slider {
+		width: 0%;
+		height: 0.4rem;
+		z-index: 10;
+		@include background-gradient();
+		display: block;
+		margin-top: -0.4rem;
+		margin-left: 7%;
+		position: absolute;
+		visibility: hidden;
+		@include transition(all 0.3s ease);
+		&.active {
+			@include transition(all 0.3s ease);
+			width: 20%;
+			//height: 2.4rem;
+			visibility: visible;
+			transform-origin: top center;
 		}
 	}
 	.lnb {
+		@include box-sizing(border-box);
 		display: none;
+		width: 100%;
+		height: 0;
+		background-color: $sub-purple2;
+		position: absolute;
+		z-index: 9;
+		padding: 3rem 2.5rem 0 2.5rem;
+		#first-page, #second-page, #third-page {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+		li {
+			ul {
+				@include flexbox();
+				@include flex-wrap(wrap);
+				@include flex-direction(column);
+				height: 7rem;				
+				li {
+					color: $white;
+					font-size: 1rem;
+					margin-bottom: 1rem;
+					margin-right: 1.5rem;
+					&:before {
+						content: '';
+						width: 0.2rem;
+						height: 0.2rem;
+						background-color: $white;
+						margin-right: 0.3rem;
+						margin-bottom: 0.25rem;
+						display: inline-block;
+					}
+				}
+			}
+		}
+		&.active {
+			display: block;
+			height: 10rem;
+		}
 	}
 }
 .slider {
 	width: 100%;
 	height: 50.4vh;
-	margin-top: 2.5rem;
 	@include box-shadow();
 	.slider-arrow {
 		width: 12%;
@@ -168,6 +237,22 @@ body {
 		}
 	}
 }
+.background {
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-size: cover;
+	width: 100%;
+	height: 7rem;
+}
+#deco1 {
+	background-image: url('../../images/index/deco-back.png');
+}
+#deco2 {
+	background-image: url('../../images/index/deco-back-2.png');
+}
+#deco3 {
+	background-image: url('../../images/index/deco-back-3.png');
+}
 .text-ad {
 	display: none;
 }
@@ -176,9 +261,9 @@ h1 {
 	font-weight: bolder;
 	color: $gray;
 	text-align: left;
-	margin-bottom: 0.8rem;
-	margin-top: 4rem;
+	margin-bottom: 1rem;
 	padding-left: 1rem;
+	margin-top: -2.2rem;
 }
 .page-one {
 	width: 100%;
@@ -276,7 +361,7 @@ h1 {
 			@include flexbox();
 			@include flex-direction(column);
 			@include align-items(center);
-			margin: 1.2rem;
+			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
 			.product-image {
@@ -331,7 +416,7 @@ h1 {
 			@include flexbox();
 			@include flex-direction(column);
 			@include align-items(center);
-			margin: 1.2rem;
+			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
 			.sale-product-image {

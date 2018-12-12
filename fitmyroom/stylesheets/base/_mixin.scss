@@ -58,10 +58,10 @@
 
 //custom//
 @mixin nav-shadow() {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97,97,97,0.3)), color-stop(38%, rgba(151,151,151,0)), to(rgba(239,239,239,0)));
-  background: -webkit-linear-gradient(top, rgba(97,97,97,0.3) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
-  background: -o-linear-gradient(top, rgba(97,97,97,0.3) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
-  background: linear-gradient(to bottom, rgba(97,97,97,0.3) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97,97,97,0.2)), color-stop(38%, rgba(151,151,151,0)), to(rgba(239,239,239,0)));
+  background: -webkit-linear-gradient(top, rgba(97,97,97,0.2) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
+  background: -o-linear-gradient(top, rgba(97,97,97,0.2) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
+  background: linear-gradient(to bottom, rgba(97,97,97,0.2) 0%, rgba(151,151,151,0) 38%, rgba(239,239,239,0) 100%);
 }
 @mixin index-shadow() {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(97,97,97,0.5)), to(rgba(239,239,239,0)));
