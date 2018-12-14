@@ -1,0 +1,92 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+
+body {
+	background-color: $body-bg;
+	font-family: 'NanumSquare', sans-serif;
+}
+.wrapper {
+	width: 100%;
+}
+.slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	@include box-shadow();
+	.slide {
+		width: 100%;
+		height: 21rem;
+		display: inline-block;
+		img {
+			width: 100%;
+		}
+		&.active {
+		}
+	}
+}
+.event-new, .brand-new, .item-new {
+	width: 100%;
+	h1 {
+		font-size: 1.2rem;
+		font-weight: bolder;
+		color: $gray;
+		text-align: left;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+		margin-top: 3.2rem;
+	}
+	.slider {
+		@include flexbox();
+		@include flex-wrap(no-wrap);
+		@include box-sizing(content-box);
+		@include box-shadow();
+  		overflow-x: auto;
+  		background-color: #fff;
+  		border-top: 0.5px solid #c6c6c6;
+  		border-bottom: 0.5px solid #c6c6c6;
+  		.product-list {
+  			@include flexbox();
+			@include flex-direction(column);
+			@include align-items(center);
+			margin: 1.5rem 1.2rem;
+			flex: 0 0 auto;
+			width: 30%;
+			.product-img-box {
+				img {
+					width: 100%;
+				}
+			}
+			.product-line {
+				width: 2.5rem;
+				height: 0.1rem;
+				background-color: $main-purple;
+				margin: 0.6rem 0 0.6rem 0;
+			}
+			.product-title {
+				font-size: 0.9rem;
+				color: $gray;
+				line-height: 1.2rem;
+				font-weight: 600;
+				width: 85%;
+				text-align: center;
+			}
+			.product-price {
+				color: $sub-purple2;
+				font-size: 1rem;
+				font-weight: 800;
+				margin: 0.6rem 0 0.8rem 0;
+			}
+			.product-btn {
+				@include background-gradient();
+				width: 60%;
+				color: #fff;
+				font-size: 0.8rem;
+				text-align: center;
+				padding: 0.2rem 0.3rem;
+				border: none;
+				font-family: 'NanumSquare', sans-serif;
+			}
+  		}
+	}
+}
