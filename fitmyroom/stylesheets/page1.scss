@@ -132,15 +132,15 @@ body {
 			@include flexbox();
 			width: 100%;
 			margin-top: 1rem;
-			border-top: 0.5px solid #c6c6c6;
+			border-top: 0.5px solid #e0e0e0;
 			.pick {
 				@include flexbox();
 				@include align-items(center);
 				@include justify-content(center);
 				width: 50%;
-				border-right: 0.5px solid #c6c6c6;
+				border-right: 0.5px solid #e0e0e0;
 				color: $gray;
-				padding: 0.5rem;
+				padding: 0.8rem;
 				font-weight: 800;
 				img {						
 					height: 1.6rem;
