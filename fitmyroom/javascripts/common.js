@@ -6,12 +6,18 @@ $(document).ready(function() {
 			$(".header").addClass('sticky');
 			$(".header").css('border-bottom', '1.5px solid #5c4089');
 			$(".menu").css('visibility', 'visible');
+			$(".menu-deco").css('visibility', 'visible');
 		} else {
 			$(".header").removeClass('sticky');
 			$(".header").css('border-bottom', 'none');
 			$(".menu").css('visibility', 'hidden');
+			$(".menu-deco").css('visibility', 'hidden');
 		}
 	}
+	$(".menu").click(function(e){
+		e.stopPropagation;
+		$(window).scrollTop(0);
+	})
 	function lnbShow(){
 		$(".nav-slider").addClass('active');
 		setTimeout(function(){
