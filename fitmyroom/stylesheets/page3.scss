@@ -11,7 +11,7 @@ body {
 }
 .nav {
 	.gnb {
-		#second {
+		#third {
 			color: $sub-purple2;
 			font-weight: 800;
 		}
@@ -34,7 +34,7 @@ body {
 		}
 	}
 }
-.event-new, .brand-new, .item-new {
+.event-sale {
 	width: 100%;
 	h1 {
 		font-size: 1.2rem;
@@ -45,7 +45,7 @@ body {
 		padding-left: 1rem;
 		margin-top: 3.2rem;
 	}
-	.slider {
+	.sale-slider{
 		@include flexbox();
 		@include flex-wrap(no-wrap);
 		@include box-sizing(content-box);
@@ -54,40 +54,56 @@ body {
   		background-color: #fff;
   		border-top: 0.5px solid #c6c6c6;
   		border-bottom: 0.5px solid #c6c6c6;
-  		.product-list {
-  			@include flexbox();
+  		.sale-product-list {
+			@include flexbox();
 			@include flex-direction(column);
 			@include align-items(center);
 			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
-			.product-img-box {
+			.sale-product-image {
 				img {
 					width: 100%;
 				}
 			}
-			.product-line {
-				width: 2.5rem;
-				height: 0.1rem;
-				background-color: $main-purple;
-				margin: 0.6rem 0 0.6rem 0;
-			}
-			.product-title {
+			.sale-product-title {
 				font-size: 0.9rem;
 				color: $gray;
 				line-height: 1.2rem;
 				font-weight: 600;
 				width: 85%;
 				text-align: center;
+				margin-top: 0.2rem;
 			}
-			.product-price {
+			.sale-product-brand {
+				font-size: 0.8rem;
+				color: $gray;
+				line-height: 1.1rem;
+				font-weight: 400;
+				width: 85%;
+				text-align: center;
+				margin-top: 0.5rem;
+			}
+			.sale-product-line {
+				width: 2.5rem;
+				height: 0.1rem;
+				background-color: $main-purple;
+				margin: 0.6rem 0 0.6rem 0;
+			}
+			.sale-product-prev-price {
+				font-size: 0.7rem;
+				color: $gray;
+				font-weight: lighter;
+				text-decoration: line-through;
+			}
+			.sale-product-price {
 				color: $sub-purple2;
 				font-size: 1rem;
 				font-weight: 800;
 				margin: 0.6rem 0 0.8rem 0;
 			}
-			.product-btn {
-				@include background-gradient();
+			.sale-product-button {
+				background-color: $main-purple;
 				width: 60%;
 				color: #fff;
 				font-size: 0.8rem;
@@ -96,6 +112,6 @@ body {
 				border: none;
 				font-family: 'NanumSquare', sans-serif;
 			}
-  		}
+		}
 	}
 }
