@@ -27,13 +27,7 @@ $(document).ready(function() {
 		if (windowScroll > decoThreePosition.top*0.5){
 			$("#deco3").css('background-position', '0 -'+windowScroll*0.1+'px');
 		}
-	}    
-	function resetSize(){
-		slider.height(slides.height());
-		slides.width(slider.width());
-		slideList.width(slides.width()*slides.length);
 	}
-	resetSize();
 	function runSlider(){
 		if(slides.hasClass('active')){
 			slideList.animate({

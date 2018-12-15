@@ -67,7 +67,7 @@ body { background-color: #efefef; font-family: 'NanumSquare', sans-serif; }
 .slider .slider-nav .nav-dots:not(:last-child) { margin-right: 0.3rem; }
 .slider .slider-nav .nav-dots.active { background-color: white; }
 .slider .slide-list { position: absolute; }
-.slider .slide-list .slide { width: 100%; height: 50.4vh; display: inline-block; float: left; }
+.slider .slide-list .slide { width: 100%; height: 50.4%; display: inline-block; float: left; }
 .slider .slide-list .slide img { width: 100%; }
 
 .background { background-repeat: no-repeat; background-position: 0% 0%; background-size: cover; width: 100%; height: 7rem; }
