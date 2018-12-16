@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var nextSlideIndex;
 	var autorun;
 	var sliderDuration = 300;
-	/////////////////////////////////////////////////////////////여기부터
+	
 	var stickyHeaderTop = $(".header").offset().top;
 	var stickyHeader = function() {
 		var scrollTop = $(window).scrollTop();
@@ -132,7 +132,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		stickyHeader();
 	});
-	///////////////////////////////////////////////////////////////////////////여기까지
+	
 	function parallaxOne(){
 		var backgroundHeight = $("#deco1").height();
 		var windowScroll = $(window).scrollTop();
@@ -210,7 +210,7 @@ $(document).ready(function() {
 	parallaxOne();
 	parallaxTwo();
 	parallaxThree();
-	//////////////////////////////////////////////////////////여기부터
+	
 	$(".menu").click(function(e){
 		e.stopPropagation;
 		$(window).scrollTop(0);
@@ -218,7 +218,7 @@ $(document).ready(function() {
 		parallaxTwo();
 		parallaxThree();
 	});
-	//////////////////////////////////////////////////////////여기까지
+	
 	$(window).scroll(function() {		
 		parallaxOne();
 		parallaxTwo();
