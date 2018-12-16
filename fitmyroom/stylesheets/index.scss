@@ -62,7 +62,6 @@ body {
 		position: absolute;
 		.slide {
 			width: 100%;
-			height: 50.4%;
 			display: inline-block;
 			float: left;
 			img {
@@ -341,8 +340,33 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
 	.wrapper {
-		max-width: 768px;
+		max-width: 600px;
 	}
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+	body {
+		@include flexbox();
+		@include justify-content(center);
+		background-color: $main-bg;
+	}
+	.wrapper {
+		@include box-sizing(content-box);
+		@include wrapper-shadow();
+		border-left: 1px solid #c6c6c6;
+		border-right: 1px solid #c6c6c6;
+		max-width: 600px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.slider {
+		.slider-arrow {
+			width: 5%;
+			top: 18%;
+		}
+	}
+}
+@media screen and (min-width: 1440px){
+
 }

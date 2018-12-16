@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	var slider = $(".slider");
-	var slides = slider.find(".slide");
-	var slideList = slider.find(".slide-list");
 	var stickyHeaderTop = $(".header").offset().top;
 	var stickyHeader = function() {
 		var scrollTop = $(window).scrollTop();
@@ -126,12 +123,6 @@ $(document).ready(function() {
 			$(".search-area").removeClass('active');
 		})
 	});
-	function resetSize(){
-		slider.height(slides.find("img").height());
-		slides.width(slider.width());
-		slideList.width(slides.width()*slides.length);
-	}
-	resetSize();
 	stickyHeader();
 	$(window).scroll(function() {
 		stickyHeader();

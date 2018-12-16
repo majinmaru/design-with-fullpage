@@ -78,12 +78,16 @@ body { background-color: #efefef; font-family: 'NanumSquare', sans-serif; }
 .event .card .profile .user-info, .updated .card .profile .user-info { width: 80%; margin-left: 0.7rem; }
 .event .card .profile .user-info .user-id, .updated .card .profile .user-info .user-id { color: #545454; font-size: 1rem; margin-top: 0.5rem; }
 .event .card .profile .user-info .user-lv, .updated .card .profile .user-info .user-lv { color: #545454; font-size: 0.7rem; margin-top: 0.4rem; }
-.event .card .profile .medal, .updated .card .profile .medal { position: absolute; width: 12%; right: 0; margin-right: 12%; }
+.event .card .profile .medal, .updated .card .profile .medal { width: 12%; right: 0; margin-right: 12%; }
 .event .card .profile .medal img, .updated .card .profile .medal img { width: 100%; }
 .event .card .pick-and-reply, .updated .card .pick-and-reply { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; width: 100%; margin-top: 1rem; border-top: 0.5px solid #e0e0e0; }
 .event .card .pick-and-reply .pick, .updated .card .pick-and-reply .pick { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; width: 50%; border-right: 0.5px solid #e0e0e0; color: #545454; padding: 0.8rem; font-weight: 800; }
 .event .card .pick-and-reply .pick img, .updated .card .pick-and-reply .pick img { height: 1.6rem; margin-right: 0.6rem; }
 .event .card .pick-and-reply .reply, .updated .card .pick-and-reply .reply { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; width: 50%; color: #545454; padding: 0.5rem; font-weight: 800; }
 .event .card .pick-and-reply .reply img, .updated .card .pick-and-reply .reply img { height: 1.6rem; margin-right: 0.6rem; }
+
+@media screen and (max-width: 600px) { .wrapper { max-width: 600px; } }
+@media screen and (min-width: 601px) and (max-width: 1023px) { body { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #efefef; }
+  .wrapper { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; -webkit-box-shadow: 0px 0px 25px 0px rgba(97, 97, 97, 0.5); -moz-box-shadow: 0px 0px 25px 0px rgba(97, 97, 97, 0.5); box-shadow: 0px 0px 25px 0px rgba(97, 97, 97, 0.5); border-left: 1px solid #c6c6c6; border-right: 1px solid #c6c6c6; max-width: 600px; } }
 
 /*# sourceMappingURL=home1.css.map */
