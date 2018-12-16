@@ -29,101 +29,113 @@ body {
 	background-color: $main-purple;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	.user-input {
+	.user-input-wrapper {
 		@include flexbox();
-		@include justify-content(center);
-		@include align-items(center);
 		@include flex-direction(column);
-		width: 80%;
-		margin-bottom: 1rem;
-		.icon-and-input {
-			@include flexbox();
-			@include align-items(center);
-			width: 100%;
-			#icon-pw {
-				@include transform(rotateY(180deg));
-			}
-			.icon {
-				width: 20%;
-				margin-right: 5%;
-				img {
-					width: 100%;
-				}
-			}
-			.user-id, .user-pw {
-				width: 75%;
-				background-color: #fff;
-				color: $gray;
-				font-size: 1rem;
-				line-height: 2.1rem;
-				height: 2.1rem;
-				border-radius: 1.8rem;
-				border: none;
-				padding-left: 1rem;
-				&::placeholder {
-					color: #c6c6c6;
-				}
-				&::-webkit-input-placeholder { 
-				    color: #c6c6c6;
-				}
-				&:-moz-placeholder { 
-				    color: #c6c6c6;
-				}
-				&::-moz-placeholder { 
-				    color: #c6c6c6;
-				}
-				&:-ms-input-placeholder { 
-				    color: #c6c6c6;
-				}
-			}
-		}		
-		.user-description {
-			width: 100%;
-			font-size: 0.9rem;
-			color: $sub-purple2;
-			margin-left: 58%;
-			margin-top: -0.2rem;
-			font-weight: 600;
-		}
-	}
-	.login, .join {
-		width: 80%;
-		font-size: 1.1rem;
-		line-height: 2.5rem;
-		height: 2.5rem;
-		border-style: none;
-		margin-bottom: 1.5rem;
-		text-align: center;
-		font-weight: 800;		
-	}
-	.login {
-		background-color: $sub-purple2; 
-		color: $white;
-		margin-top: 1.5rem;
-	}
-	.join {
-		background-color: #fff;
-		color: $sub-purple2;
-	}
-	.sns {
-		@include flexbox();
-		@include justify-content(center);
 		@include align-items(center);
-		width: 80%;
-		margin-top: 1rem;
-		.sns-icon {
+		width: 100%;
+		.user-input {
 			@include flexbox();
 			@include justify-content(center);
-			border-right: 1px solid $white;
-			&:last-of-type {
-				border-right: none;
-			}
-			width: 33%;
-			img {
-				height: 2rem;
+			@include align-items(center);
+			@include flex-direction(column);
+			width: 80%;
+			margin-bottom: 1rem;
+			.icon-and-input {
+				@include flexbox();
+				@include align-items(center);
+				width: 100%;
+				#icon-pw {
+					@include transform(rotateY(180deg));
+				}
+				.icon {
+					width: 20%;
+					margin-right: 5%;
+					img {
+						width: 100%;
+					}
+				}
+				.user-id, .user-pw {
+					width: 75%;
+					background-color: #fff;
+					color: $gray;
+					font-size: 1rem;
+					line-height: 2.1rem;
+					height: 2.1rem;
+					border-radius: 1.8rem;
+					border: none;
+					padding-left: 1rem;
+					&::placeholder {
+						color: #c6c6c6;
+					}
+					&::-webkit-input-placeholder { 
+					    color: #c6c6c6;
+					}
+					&:-moz-placeholder { 
+					    color: #c6c6c6;
+					}
+					&::-moz-placeholder { 
+					    color: #c6c6c6;
+					}
+					&:-ms-input-placeholder { 
+					    color: #c6c6c6;
+					}
+				}
+			}		
+			.user-description {
+				width: 100%;
+				font-size: 0.9rem;
+				color: $sub-purple2;
+				margin-left: 58%;
+				margin-top: -0.2rem;
+				font-weight: 600;
 			}
 		}
 	}
+	.login-join-sns {
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);
+		width: 100%;
+		.login, .join {
+			width: 80%;
+			font-size: 1.1rem;
+			line-height: 2.5rem;
+			height: 2.5rem;
+			border-style: none;
+			margin-bottom: 1.5rem;
+			text-align: center;
+			font-weight: 800;		
+		}
+		.login {
+			background-color: $sub-purple2; 
+			color: $white;
+			margin-top: 1.5rem;
+		}
+		.join {
+			background-color: #fff;
+			color: $sub-purple2;
+		}
+		.sns {
+			@include flexbox();
+			@include justify-content(center);
+			@include align-items(center);
+			width: 80%;
+			margin-top: 1rem;
+			.sns-icon {
+				@include flexbox();
+				@include justify-content(center);
+				border-right: 1px solid $white;
+				&:last-of-type {
+					border-right: none;
+				}
+				width: 33%;
+				img {
+					height: 2rem;
+				}
+			}
+		}
+	}	
 }
 @media screen and (max-width: 600px){
 	.wrapper {
@@ -142,5 +154,39 @@ body {
 		border-left: 1px solid #c6c6c6;
 		border-right: 1px solid #c6c6c6;
 		max-width: 600px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	body {
+		@include flexbox();
+		@include justify-content(center);
+		background-color: $main-bg;
+		height: 100%;
+	}
+	.wrapper {
+		@include box-sizing(content-box);
+		@include wrapper-shadow();
+		border-left: 1px solid #c6c6c6;
+		border-right: 1px solid #c6c6c6;
+		width: 100%;
+		max-width: 1024px;
+		min-height: 100vh;
+	}
+	.login-form {
+		@include flex-direction(row);
+		@include justify-content(center);
+		height: 40%;
+		.user-input-wrapper {
+			width: 34%;
+			.user-input {
+				width: 100%;
+			}
+		}
+		.login-join-sns {
+			width: 32%;
+			.login {
+				margin-top: 0;
+			}
+		}
 	}
 }

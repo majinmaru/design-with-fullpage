@@ -43,20 +43,6 @@ body {
 		position: absolute;
 		bottom: 0;
 		margin-bottom: 1rem;
-		.nav-dots {
-			display: inline-block;
-			width: 0.5rem;
-			height: 0.5rem;
-			background-color: rgba(255, 255, 255, 0.4);
-			border-radius: 0.5rem;
-			cursor: pointer;
-			&:not(:last-child) {
-				margin-right: 0.3rem;
-			}
-			&.active {
-				background-color: rgba(255, 255, 255, 1)
-			}
-		}
 	}
 	.slide-list {
 		position: absolute;
@@ -102,116 +88,136 @@ h1 {
 }
 .page-one {
 	width: 100%;
-	.page-one-card {
-		@include flexbox();
-		@include box-sizing(content-box);
-		@include box-shadow();
+	.page-one-card-wrapper {
 		width: 100%;
-		height: 10.7rem;
-		background-color: #fff;
-		border: 0.5px solid #c6c6c6;
-		&:nth-child(2) {
-			.card-img {
-				background-image: url('../../images/page1/room-1.png');
-			}
-		}
-		&:nth-child(3) {
-			margin-top: 3rem;
-			.card-img {
-				background-image: url('../../images/page1/room-2.png');
-			}
-		}
-		&:nth-child(4) {
-			margin-top: 3rem;
-			.card-img {
-				background-image: url('../../images/page1/room-3.png');
-			}	
-		}
-		.card-img {
-			width: 50%;
-			background-size: cover;
-			background-position: center;
-			.pick-and-reply {
-				@include flexbox();
-				width: 100%;
-				background-color: rgba(0, 0, 0, 0.7);
-				margin-top: 8.2rem;
-				height: 2.5rem;
-				.pick {
-					@include flexbox();
-					@include align-items(center);
-					@include justify-content(center);
-					width: 50%;
-					color: $white;
-					font-weight: 800;
-					font-size: 0.9rem;
-					img {
-						width: 1.9rem;
-						height: 1.5rem;
-						margin-right: 0.3rem;
-					}
-				}
-				.reply {
-					@include flexbox();
-					@include align-items(center);
-					@include justify-content(center);
-					width: 50%;
-					color: $white;
-					font-weight: 800;
-					font-size: 0.9rem;
-					img {
-						width: 1.55rem;
-						height: 1.5rem;
-						margin-right: 0.3rem;
-					}
-				}
-			}
-		}
-		.card-content {
+		.page-one-card {
 			@include flexbox();
-			@include flex-direction(column);
-			@include justify-content(space-between);
-			width: 50%;
-			.card-title {
-				width: 80%;
-				font-size: 1rem;
-				color: $gray;
-				line-height: 1.4rem;
-				margin-top: 0.5rem;
-				padding-left: 7%;
-				font-weight: 800;
+			@include box-sizing(content-box);
+			@include box-shadow();
+			width: 100%;
+			height: 10.7rem;
+			background-color: #fff;
+			border: 0.5px solid #c6c6c6;
+			&:hover {
+				.card-img {
+					opacity: 0.7;
+				}
 			}
-			.card-description {
-				@include text-overflow(ellipsis);
-				width: 80%;
-				font-size: 0.8rem;
-				color: $gray;
-				line-height: 1.3rem;
-				white-space: normal;
-                overflow: hidden;
-                display: -webkit-box;
-               -webkit-line-clamp: 3; 
-               -webkit-box-orient: vertical;
-                height: 3.9rem;
-                margin-top: 0.5rem;
-                padding-left: 7%;
+			&:nth-child(1) {
+				.card-img {
+					background-image: url('../../images/page1/room-1.png');
+				}
 			}
-			.card-button {
-				background-color: $main-purple;
-				border-top: none;
-				border-left: none;
-				border-right: 2px solid $sub-purple1;
-				border-bottom: 2px solid $sub-purple1;
-				color: $white;
-				text-align: center;
-				width: 42%;
-				padding: 0.2rem;
-				margin-top: 0.7rem;
-				margin-left: 45%;
-				margin-bottom: 0.7rem;
+			&:nth-child(2) {
+				margin-top: 3rem;
+				.card-img {
+					background-image: url('../../images/page1/room-2.png');
+				}
+			}
+			&:nth-child(3) {
+				margin-top: 3rem;
+				.card-img {
+					background-image: url('../../images/page1/room-3.png');
+				}	
+			}
+			.card-img {
+				width: 50%;
+				background-size: cover;
+				background-position: center;
+				.pick-and-reply {
+					@include flexbox();
+					width: 100%;
+					background-color: rgba(0, 0, 0, 0.7);
+					margin-top: 8.2rem;
+					height: 2.5rem;
+					.pick {
+						@include flexbox();
+						@include align-items(center);
+						@include justify-content(center);
+						width: 50%;
+						color: $white;
+						font-weight: 800;
+						font-size: 0.9rem;
+						cursor: pointer;
+						img {
+							width: 1.9rem;
+							height: 1.5rem;
+							margin-right: 0.3rem;
+						}
+					}
+					.reply {
+						@include flexbox();
+						@include align-items(center);
+						@include justify-content(center);
+						width: 50%;
+						color: $white;
+						font-weight: 800;
+						font-size: 0.9rem;
+						cursor: pointer;
+						img {
+							width: 1.55rem;
+							height: 1.5rem;
+							margin-right: 0.3rem;
+						}
+					}
+				}
+			}
+			.card-content {
+				@include flexbox();
+				@include flex-direction(column);
+				@include justify-content(space-between);
+				width: 50%;
+				.card-title {
+					width: 80%;
+					font-size: 1rem;
+					color: $gray;
+					line-height: 1.4rem;
+					margin-top: 0.5rem;
+					padding-left: 7%;
+					font-weight: 800;
+					cursor: pointer;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				.card-description {
+					@include text-overflow(ellipsis);
+					width: 80%;
+					font-size: 0.8rem;
+					color: $gray;
+					line-height: 1.3rem;
+					white-space: normal;
+	                overflow: hidden;
+	                display: -webkit-box;
+	               -webkit-line-clamp: 3; 
+	               -webkit-box-orient: vertical;
+	                height: 3.9rem;
+	                margin-top: 0.5rem;
+	                padding-left: 7%;
+				}
+				.card-button {
+					background-color: $main-purple;
+					border-top: none;
+					border-left: none;
+					border-right: 2px solid $sub-purple1;
+					border-bottom: 2px solid $sub-purple1;
+					color: $white;
+					text-align: center;
+					width: 42%;
+					padding: 0.2rem;
+					margin-top: 0.7rem;
+					margin-left: 45%;
+					margin-bottom: 0.7rem;
+					cursor: pointer;
+					@include transition(all 0.3s ease);
+					&:hover {
+						letter-spacing: 0.2rem;
+					}
+				}
 			}
 		}
 	}
+	
 }
 .page-two {
 	.second-page-slider {
@@ -230,6 +236,11 @@ h1 {
 			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
+			&:hover {
+				.product-image {
+					opacity: 0.7;
+				}
+			}
 			.product-image {
 				img {
 					width: 100%;
@@ -248,6 +259,10 @@ h1 {
 				font-weight: 600;
 				width: 85%;
 				text-align: center;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.product-price {
 				color: $sub-purple2;
@@ -257,6 +272,7 @@ h1 {
 			}
 			.product-button {
 				@include background-gradient();
+				@include transition(all 0.3s ease);
 				width: 60%;
 				color: #fff;
 				font-size: 0.8rem;
@@ -264,6 +280,10 @@ h1 {
 				padding: 0.2rem 0.3rem;
 				border: none;
 				font-family: 'NanumSquare', sans-serif;
+				cursor: pointer;
+				&:hover {
+					letter-spacing: 0.2rem;
+				}
 			}
 		}
 	}
@@ -285,6 +305,11 @@ h1 {
 			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
+			&:hover {
+				.sale-product-image {
+					opacity: 0.7;
+				}
+			}
 			.sale-product-image {
 				img {
 					width: 100%;
@@ -298,6 +323,10 @@ h1 {
 				width: 85%;
 				text-align: center;
 				margin-top: 0.2rem;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.sale-product-brand {
 				font-size: 0.8rem;
@@ -307,6 +336,10 @@ h1 {
 				width: 85%;
 				text-align: center;
 				margin-top: 0.5rem;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.sale-product-line {
 				width: 2.5rem;
@@ -327,6 +360,7 @@ h1 {
 				margin: 0.6rem 0 0.8rem 0;
 			}
 			.sale-product-button {
+				@include transition(all 0.3s ease);
 				background-color: $main-purple;
 				width: 60%;
 				color: #fff;
@@ -335,6 +369,10 @@ h1 {
 				padding: 0.2rem 0.3rem;
 				border: none;
 				font-family: 'NanumSquare', sans-serif;
+				cursor: pointer;
+				&:hover {
+					letter-spacing: 0.2rem;
+				}
 			}
 		}
 	}
@@ -359,14 +397,97 @@ h1 {
 		max-width: 600px;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) {
+	body {
+		@include flexbox();
+		@include justify-content(center);
+		background-color: $main-bg;
+	}
+	.wrapper {
+		@include box-sizing(content-box);
+		@include wrapper-shadow();
+		border-left: 1px solid #c6c6c6;
+		border-right: 1px solid #c6c6c6;
+		width: 100%;
+		max-width: 1024px;
+	}
 	.slider {
 		.slider-arrow {
 			width: 5%;
-			top: 18%;
 		}
 	}
-}
-@media screen and (min-width: 1440px){
-
+	.background {
+		height: 10rem;
+	}
+	#deco1 {
+	background-image: url('../../images/PC/index/deco-1.png');
+	}
+	#deco2 {
+		background-image: url('../../images/PC/index/deco-2.png');
+	}
+	#deco3 {
+		background-image: url('../../images/PC/index/deco-3.png');
+	}
+	.page-one {
+		@include flexbox();
+		@include flex-direction(column);
+		.page-one-card-wrapper {
+			@include flexbox();
+			@include justify-content(space-between);
+			.page-one-card {
+				@include flex-direction(column);
+				width: 29%;
+				height: 29.7rem;
+				margin: 0 2%;
+				&:nth-child(2) {
+					margin-top: 0;
+				}
+				&:nth-child(3) {
+					margin-top: 0;
+				}
+				.card-img {
+					width: 100%;
+					.pick-and-reply {
+						margin-top: 15rem;
+					}
+				}
+				.card-content {
+					width: 100%;
+					.card-title {
+						margin-top: 1.5rem;
+						padding-left: 10%;
+					}
+					.card-description {
+						width: 77%;
+						padding-left: 10%;
+					}
+					.card-button {
+						margin-top: 1rem;
+						padding: 0.6rem;
+					}
+				}
+			}
+		}
+	}
+	.page-two {
+		.second-page-slider {
+			padding-left: 1rem;
+			.product-list {
+				width: 20%;
+				.product-button {
+					padding: 0.5rem 0.3rem;
+				}
+			}
+		}
+	}
+	.page-three {
+		.third-page-slider {
+			.sale-product-list {
+				width: 19%;
+				.sale-product-button {
+					padding: 0.5rem 0.3rem;
+				}
+			}
+		}
+	}
 }

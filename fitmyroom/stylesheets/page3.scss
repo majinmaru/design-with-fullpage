@@ -61,6 +61,11 @@ body {
 			margin: 1.5rem 1.2rem;
 			flex: 0 0 auto;
 			width: 30%;
+			&:hover {
+				.sale-product-image {
+					opacity: 0.7;
+				}
+			}
 			.sale-product-image {
 				img {
 					width: 100%;
@@ -74,6 +79,10 @@ body {
 				width: 85%;
 				text-align: center;
 				margin-top: 0.2rem;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.sale-product-brand {
 				font-size: 0.8rem;
@@ -83,6 +92,10 @@ body {
 				width: 85%;
 				text-align: center;
 				margin-top: 0.5rem;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.sale-product-line {
 				width: 2.5rem;
@@ -103,6 +116,7 @@ body {
 				margin: 0.6rem 0 0.8rem 0;
 			}
 			.sale-product-button {
+				@include transition(all 0.3s ease);
 				background-color: $main-purple;
 				width: 60%;
 				color: #fff;
@@ -111,6 +125,10 @@ body {
 				padding: 0.2rem 0.3rem;
 				border: none;
 				font-family: 'NanumSquare', sans-serif;
+				cursor: pointer;
+				&:hover {
+					letter-spacing: 0.2rem;
+				}
 			}
 		}
 	}
@@ -132,5 +150,34 @@ body {
 		border-left: 1px solid #c6c6c6;
 		border-right: 1px solid #c6c6c6;
 		max-width: 600px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	body {
+		@include flexbox();
+		@include justify-content(center);
+		background-color: $main-bg;
+	}
+	.wrapper {
+		@include box-sizing(content-box);
+		@include wrapper-shadow();
+		border-left: 1px solid #c6c6c6;
+		border-right: 1px solid #c6c6c6;
+		width: 100%;
+		max-width: 1024px;
+	}
+	.event-sale {
+		h1 {
+			margin-top: 6rem;
+		}
+		.sale-slider {
+			.sale-product-list {
+				width: 20%;
+				margin: 2rem 2.5rem;
+				.sale-product-button {
+					padding: 0.5rem 0.3rem;
+				}
+			}
+		}
 	}
 }

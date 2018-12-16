@@ -15,16 +15,18 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="menu-deco front"></div>
-			<div class="menu">
-				<div class="menu-line"></div>
-			</div>
-			<div class="menu-deco back"></div>
-			<a class="logo" href="index.html">
-				<img src="images/index/logo.png">
-			</a>
-			<div class="search-icon">
+			<div class="header-wrapper">
+				<div class="search-icon">
 					<img src="images/index/search-icon.png">
+				</div>
+				<a class="logo" href="index.html">
+					<img src="images/index/logo.png">
+				</a>
+				<div class="menu-deco front"></div>
+				<div class="menu">
+					<div class="menu-line"></div>
+				</div>
+				<div class="menu-deco back"></div>
 			</div>												
 		</header>
 		<div class="search-area">
@@ -74,35 +76,39 @@
 			</ul>
 		</nav>
 		<section class="login-form">
-			<div class="user-input">
-				<div class="icon-and-input">
-					<div class="icon">
-						<img src="images/page4/login-icon.png">
+			<div class="user-input-wrapper">
+				<div class="user-input">
+					<div class="icon-and-input">
+						<div class="icon">
+							<img src="images/page4/login-icon.png">
+						</div>
+						<input class="user-id" type="text" val="user-id" placeholder="example@example.com">
 					</div>
-					<input class="user-id" type="text" val="user-id" placeholder="example@example.com">
+					<label class="user-description">아이디(이메일)</label>
 				</div>
-				<label class="user-description">아이디(이메일)</label>
-			</div>
-			<div class="user-input">
-				<div class="icon-and-input">
-					<div id="icon-pw" class="icon">
-						<img src="images/page4/login-icon.png">
+				<div class="user-input">
+					<div class="icon-and-input">
+						<div id="icon-pw" class="icon">
+							<img src="images/page4/login-icon.png">
+						</div>
+						<input class="user-pw" type="text" val="user-pw" placeholder="********">
 					</div>
-					<input class="user-pw" type="text" val="user-pw" placeholder="********">
+					<label class="user-description">비밀번호(영문+숫자)</label>
 				</div>
-				<label class="user-description">비밀번호(영문+숫자)</label>
 			</div>
-			<button class="login">로그인</button>
-			<button class="join">회원가입</button>
-			<div class="sns">
-				<div class="sns-icon">
-					<img src="images/page4/naver-icon.png">
-				</div>
-				<div class="sns-icon">
-					<img src="images/page4/kakao-icon.png">
-				</div>
-				<div class="sns-icon">
-					<img src="images/page4/fb-icon.png">
+			<div class="login-join-sns">
+				<button class="login">로그인</button>
+				<button class="join">회원가입</button>
+				<div class="sns">
+					<div class="sns-icon">
+						<img src="images/page4/naver-icon.png">
+					</div>
+					<div class="sns-icon">
+						<img src="images/page4/kakao-icon.png">
+					</div>
+					<div class="sns-icon">
+						<img src="images/page4/fb-icon.png">
+					</div>
 				</div>
 			</div>
 		</section>

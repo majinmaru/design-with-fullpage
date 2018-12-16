@@ -1,11 +1,7 @@
 $(document).ready(function() {
-	var slider = $(".slider");
-	var slides = slider.find(".slide");
-	var slideList = slider.find(".slide-list");
-	function resetSize(){
-		slider.height(slides.find("img").height());
-		slides.width(slider.width());
-		slideList.width(slides.width()*slides.length);
+	var windowSize = $(window).width();
+	if(windowSize >= 1024){
+		$(".slide").find("img").attr('src', 'images/PC/page2/pc-jumbo-2.png');
+		$(".slider").height('21.8rem');
 	}
-	resetSize();
 });
