@@ -192,14 +192,14 @@ $(document).ready(function() {
 		var decoTwoPosition = $("#deco2").position();
 		var windowScroll = $(window).scrollTop();
 		if (windowScroll > decoTwoPosition.top*0.4){
-			$("#deco2").css('background-position', '0 -'+windowScroll*0.2+'px');
+			$("#deco2").css('background-position', '0 -'+windowScroll*0.15+'px');
 		}
 	}
 	function parallaxThree(){
 		var decoThreePosition = $("#deco3").position();
 		var windowScroll = $(window).scrollTop();
 		if (windowScroll > decoThreePosition.top*0.5){
-			$("#deco3").css('background-position', '0 -'+windowScroll*0.15+'px');
+			$("#deco3").css('background-position', '0 -'+windowScroll*0.1+'px');
 		}
 	}
 	function resetSize(){
