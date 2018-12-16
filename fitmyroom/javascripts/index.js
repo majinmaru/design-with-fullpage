@@ -191,14 +191,14 @@ $(document).ready(function() {
 	function parallaxTwo(){
 		var decoTwoPosition = $("#deco2").position();
 		var windowScroll = $(window).scrollTop();
-		if (windowScroll > decoTwoPosition.top*0.4){
+		if (windowScroll > decoTwoPosition.top*0.3){
 			$("#deco2").css('background-position', '0 -'+windowScroll*0.15+'px');
 		}
 	}
 	function parallaxThree(){
 		var decoThreePosition = $("#deco3").position();
 		var windowScroll = $(window).scrollTop();
-		if (windowScroll > decoThreePosition.top*0.5){
+		if (windowScroll > decoThreePosition.top*0.3){
 			$("#deco3").css('background-position', '0 -'+windowScroll*0.1+'px');
 		}
 	}
