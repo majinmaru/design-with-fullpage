@@ -67,7 +67,7 @@ footer { text-align: center; margin-top: 5rem; margin-bottom: 2rem; font-size: 0
   .nav .gnb .gnb-list { font-size: 1.2rem; }
   .nav .gnb .gnb-list a { font-size: 1.2rem; }
   .nav .nav-slider.active { width: 10%; }
-  .search-area { top: 3.1rem; }
+  .search-area { top: 3.1rem; max-width: 1024px; }
   footer { margin-top: 9rem; } }
 body { background-color: #efefef; font-family: 'NanumSquare', sans-serif; }
 
