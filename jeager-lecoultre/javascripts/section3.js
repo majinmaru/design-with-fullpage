@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#section3 .issues .card-container .card").hide();
     $("#section3 .issues .card-container .card.active").show();
     
-    $("#section3 .card.active").css('background-image', 'url(app/assets/images/section3/' + $firstCardId + '.png)');
+    $("#section3 .card.active").css('background-image', 'url(images/section3/' + $firstCardId + '.png)');
     checkButton();
     
     function nextCard() {
@@ -20,7 +20,7 @@ $(document).ready(function() {
             $(".disappear").next().addClass('active');
         }
         var $getCardId = $(".card.active").attr('id');
-        $("#section3 .card.active").css('background-image', 'url(app/assets/images/section3/' + $getCardId + '.png)');
+        $("#section3 .card.active").css('background-image', 'url(images/section3/' + $getCardId + '.png)');
         $(".disappear").removeClass('disappear');
         $(".card").show();
         $(".card-container .active").siblings().hide();
@@ -34,7 +34,7 @@ $(document).ready(function() {
             $(".disappear").prev().addClass('active');
         }
         var $getCardId = $(".card.active").attr('id');
-        $("#section3 .card.active").css('background-image', 'url(app/assets/images/section3/' + $getCardId + '.png)');
+        $("#section3 .card.active").css('background-image', 'url(images/section3/' + $getCardId + '.png)');
         $(".disappear").removeClass('disappear');
         $(".card").show();
         $(".card-container .active").siblings().hide();

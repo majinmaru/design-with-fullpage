@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     $(".history-description p:first").addClass('active');
     $(".timeline li:first").addClass('active');
-    $(".history").css('background-image', 'url(app/assets/images/section1/bg-1833.png)');
+    $(".history").css('background-image', 'url(images/section1/bg-1833.png)');
     
     var $historyId = $(".history-description p").attr('id');
 
@@ -17,8 +17,8 @@ $(document).ready(function() {
         $(currentHref).show();
         $(currentHref).addClass('active');
         
-        $(".history").css('background-image', 'url(app/assets/images/section1/bg-' + currentYear + '.png)');
-        $(".history-image").attr('src', 'app/assets/images/section1/'+ currentYear +'.png');
+        $(".history").css('background-image', 'url(images/section1/bg-' + currentYear + '.png)');
+        $(".history-image").attr('src', 'images/section1/'+ currentYear +'.png');
         return false;
     });
 });

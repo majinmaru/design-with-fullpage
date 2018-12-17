@@ -1,9 +1,7 @@
 $(document).ready(function() {
-    
-    
     $("#section2 .product-info").hide();
     function setBg() {
-        $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+        $("#section2").css('background-image', 'url(images/section2/section2-bg.png)');
         return false;
     }
     setBg();
@@ -60,14 +58,13 @@ $(document).ready(function() {
             $(".product-image").addClass('hidden');
             $(".product-image").removeClass('hidden').addClass('appear');
             */
-            $(".product-image").attr('src', 'app/assets/images/section2/' + $watchName + '.png');
+            $(".product-image").attr('src', 'images/section2/' + $watchName + '.png');
         });
         $('document').click(function () {
             $newSelect.removeClass('active');
             $list.hide();
         });
-    });
-    
+    });   
     
     $("#section2 .product-list .list-part li").click(function(e) {
         e.stopPropagation();
@@ -78,7 +75,7 @@ $(document).ready(function() {
         $("div.new-select").text($(".selectbox").children('option').eq($getProductIndex).text());
         $($productNameId).addClass('active');
         $($productNameId).siblings().removeClass('active');
-        $(".product-image").attr('src', 'app/assets/images/section2/' + $getProductName + '.png');
+        $(".product-image").attr('src', 'images/section2/' + $getProductName + '.png');
         
         $("#section2 .product-list").hide()
         $("#section2").css('background-image', 'none');
@@ -88,24 +85,13 @@ $(document).ready(function() {
          setTimeout(function(){
 				$("#section2 .product-info").show() 
 			}, 200); //Same time as animation
-
-    });    
-        
-        
+    });         
     $("#section2 .product-info .back").click(function(e) {
         e.stopPropagation();
         $("#section2 .product-info").hide();
         $("#section2 .product-list").show();
         $("#section2 .product-list").removeClass('disappear').addClass('active');
-        $("#section2").css('background-image', 'url(app/assets/images/section2/section2-bg.png)');
+        $("#section2").css('background-image', 'url(images/section2/section2-bg.png)');
         $(".company-name-box").show();
     });
-    
-            
-        
-        
-        
-    
-
-
 });
