@@ -1,12 +1,22 @@
 $(document).ready(function() {
     $("#section2 .product-info").hide();
     function setBg() {
-        $("#section2").css({
-            'background': 'url(images/section2/section2-bg.png), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%)',
-            'background-size': '25%, 100%',
-            'background-repeat': 'no-repeat',
-            'background-position': '90% bottom, center'
-        });
+        $windowSize = $(window).width();
+        if(319 < $windowSize < 769){
+             $("#section2").css({
+                'background': 'url(images/section2/section2-bg.png), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%)',
+                'background-size': '55%, 100%',
+                'background-repeat': 'no-repeat',
+                'background-position': '115% bottom, center'
+             });
+        } else {
+            $("#section2").css({
+                'background': 'url(images/section2/section2-bg.png), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%)',
+                'background-size': '25%, 100%',
+                'background-repeat': 'no-repeat',
+                'background-position': '90% bottom, center'
+            });
+        }
         return false;
     }
     setBg();
