@@ -299,6 +299,7 @@ template { display: none; }
   100% { opacity: 1; bottom: 0; } }
 .section { background: radial-gradient(circle, #041419 0%, #041419 55%, #040c0c 100%); background-color: #041419; }
 
+#section1 { background: url("../../images/section1/section1bg.png"), radial-gradient(circle, #041419 0%, #041419 55%, #040c0c 100%); background-size: contain, 100%; background-repeat: no-repeat; background-position: bottom, center; }
 #section1 .fp-tableCell { display: block; }
 #section1 .history { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 50%; height: auto; position: relative; top: 25%; margin-left: 25%; background-image: url("../../images/section1/bg-1833.png"); background-size: 40%; background-position: right bottom; background-repeat: no-repeat; }
 #section1 .history .history-image-box { width: 30%; display: block; position: relative; }

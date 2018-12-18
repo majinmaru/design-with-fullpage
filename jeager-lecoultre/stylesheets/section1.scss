@@ -22,6 +22,10 @@
 }
 
 #section1 {
+    background: url('../../images/section1/section1bg.png'), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
+    background-size: contain, 100%;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
     .fp-tableCell {
         display: block;
     }
