@@ -1,7 +1,12 @@
 $(document).ready(function() {
     $("#section2 .product-info").hide();
     function setBg() {
-        $("#section2").css('background-image', 'url(images/section2/section2-bg.png)');
+        $("#section2").css({
+            'background': 'url(images/section2/section2-bg.png), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%)',
+            'background-size': '25%, 100%',
+            'background-repeat': 'no-repeat',
+            'background-position': '90% bottom, center'
+        });
         return false;
     }
     setBg();
@@ -78,7 +83,7 @@ $(document).ready(function() {
         $(".product-image").attr('src', 'images/section2/' + $getProductName + '.png');
         
         $("#section2 .product-list").hide()
-        $("#section2").css('background-image', 'none');
+        $("#section2").css('background', 'radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%)');
         $(".company-name-box").hide();
         
         $("#section2 .product-info").addClass('active');
@@ -91,7 +96,7 @@ $(document).ready(function() {
         $("#section2 .product-info").hide();
         $("#section2 .product-list").show();
         $("#section2 .product-list").removeClass('disappear').addClass('active');
-        $("#section2").css('background-image', 'url(images/section2/section2-bg.png)');
+        setBg();
         $(".company-name-box").show();
     });
 });

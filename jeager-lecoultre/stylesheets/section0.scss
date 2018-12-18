@@ -1,9 +1,171 @@
 @import 'base/color.scss';
 @import 'base/font.scss';
 @import 'base/mixin.scss';
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+@-webkit-keyframes sky {
+    0%{background-position:0% 50%}
+    25%{background-position:50% 0%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 100%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes sky {
+    0%{background-position:0% 50%}
+    25%{background-position:50% 0%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 100%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes sky {
+    0%{background-position:0% 50%}
+    25%{background-position:50% 0%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 100%}
+    100%{background-position:0% 50%}
+}
+@keyframes sky { 
+    0%{background-position:0% 50%}
+    25%{background-position:50% 0%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 100%}
+    100%{background-position:0% 50%}
+}
+/*wave animation*/
+@-webkit-keyframes wave {
+    0%{margin-left: 0}
+    100%{margin-left: 1rem}
+}
+@-moz-keyframes wave {
+    0%{margin-left: 0}
+    100%{margin-left: 1rem}
+}
+@-o-keyframes wave {
+    0%{margin-left: 0}
+    100%{margin-left: 1rem}
+}
+@keyframes wave { 
+    0%{margin-left: 0}
+    100%{margin-left: 1rem}
+}
+/*star-move animation*/
+@-webkit-keyframes star-move {
+    0%{margin-left: 0; margin-top: 0;}
+    25%{margin-left: 0.3rem; margin-top: 0;}
+    50%{margin-left: 0.3rem; margin-top: 0.3rem;}
+    50%{margin-left: 0; margin-top: 0.3rem;}
+    100%{margin-left: 0; margin-top: 0;}
+}
+@-moz-keyframes star-move {
+    0%{margin-left: 0; margin-top: 0;}
+    25%{margin-left: 0.3rem; margin-top: 0;}
+    50%{margin-left: 0.3rem; margin-top: 0.3rem;}
+    50%{margin-left: 0; margin-top: 0.3rem;}
+    100%{margin-left: 0; margin-top: 0;}
+}
+@-o-keyframes star-move {
+    0%{margin-left: 0; margin-top: 0;}
+    25%{margin-left: 0.3rem; margin-top: 0;}
+    50%{margin-left: 0.3rem; margin-top: 0.3rem;}
+    50%{margin-left: 0; margin-top: 0.3rem;}
+    100%{margin-left: 0; margin-top: 0;}
+}
+@keyframes star-move { 
+    0%{margin-left: 0; margin-top: 0;}
+    25%{margin-left: 0.3rem; margin-top: 0;}
+    50%{margin-left: 0.3rem; margin-top: 0.3rem;}
+    50%{margin-left: 0; margin-top: 0.3rem;}
+    100%{margin-left: 0; margin-top: 0;}
+}
+@-webkit-keyframes rotate-orbit {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@-moz-keyframes rotate-orbit {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@-o-keyframes rotate-orbit {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes rotate-orbit {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes bounce {
+  from,
+  5%,
+  28%,
+  47%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
+  20%,
+  22% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  39% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  58% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  5%,
+  28%,
+  47%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  20%,
+  22% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  39% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  58% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);}
+}
 .section {
-    background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,12,12,1) 100%);
+    background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
     background-color: $main-color;
 }
 /////////////////////////////////section0
@@ -15,40 +177,279 @@
         @include align-items(center);
         width: 100%;
         height: 100%;
-        background-image: url('../images/section0/intro-bg.png');
+        background-image: url('../../images/section0/intro-bg.png');
         background-size: cover;
         background-position: center;
         .clock {
             @include transition(all 0.5s ease);
-            width: 60vh;
-            height: 60vh;
+            width: 58vh;
+            height: 58vh;
             display: flex;
             transform-style: preserve-3d;
             perspective: 100px;
             position: relative;
-            &:hover {
+            &.transform {
                 @include transform(rotateY(-180deg));
             }
             .clock-front{
                 position: absolute;
-                width: 60vh;
-                height: 60vh;
+                width: 58vh;
+                height: 58vh;
                 border-radius: 50%;
-                display: flex;
                 backface-visibility: hidden;
                 img {
                     height: 100%;
+                    backface-visibility: hidden;
                 }
             }
-            .click-back {
+            .clock-back {
+                @include box-sizing(border-box);                
                 @include transform(rotateY(-180deg));
+                @include radial-bg();
+                @include animation(sky 7s linear infinite);
+                background-size: 700%;
+                overflow: hidden;
                 position: absolute;
                 backface-visibility: hidden;
-                width: 60vh;
-                height: 60vh;
+                width: 58vh;
+                height: 58vh;
                 border-radius: 50%;
-                border: 0.4px solid rgba(255, 255, 255, 0.9);
-                background: $main-color;
+                border: 0.5px solid rgba(255, 255, 255, 0.8);
+                .orbits {
+                    @include flexbox();
+                    @include justify-content(center);
+                    .orbit-1 {
+                        @include animation(rotate-orbit 5s linear infinite);
+                        top: 49%;
+                        width: 15rem;
+                        height: 15rem;
+                        border-radius: 50%;
+                        border-top: 1px solid $white;
+                        position: absolute;
+                    }
+                    .orbit-2 {
+                        @include animation(rotate-orbit 4s linear infinite);
+                        top: 42%;
+                        width: 23rem;
+                        height: 23rem;
+                        border-radius: 50%;
+                        border-top: 1px solid $white;
+                        position: absolute;
+                    }
+                    .orbit-3 {
+                        @include animation(rotate-orbit 3s linear infinite);                    
+                        top: 30%;
+                        width: 30rem;
+                        height: 30rem;
+                        border-radius: 50%;
+                        border-top: 1px solid $white;
+                        position: absolute;
+                    }
+                    .orbit-4 {
+                        @include animation(rotate-orbit 2s linear infinite);
+                        top: 10%;
+                        width: 33rem;
+                        height: 33rem;
+                        border-radius: 50%;
+                        border-top: 1px solid $white;
+                        position: absolute;
+                    }
+                }
+                .layer {
+                    overflow: hidden;
+                    width: 58vh;
+                    height: 58vh;
+                    border-radius: 50%;
+                    backface-visibility: hidden;
+                    &.first {
+                        position: absolute;
+                        background: url('../../images/section0/clock-back-1.png');
+                        background-position: center bottom;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        .star {
+                            background-color: $white;
+                            @include box-shadow(0 0 3px $white);                       
+                            &.small {
+                                position: absolute;
+                                display: inline-block;
+                                width: 1px;
+                                height: 1px;
+                                background-color: $white;
+                                &:nth-of-type(1) {
+                                    @include animation(star-move 20s ease infinite);
+                                    top: 10%;
+                                    left: 22%;
+                                }
+                                &:nth-of-type(2) {
+                                    position: absolute;
+                                    top: 30%;
+                                    left: 75%;
+                                }
+                                &:nth-of-type(3) {
+                                    @include animation(star-move 15s ease-in-out infinite);
+                                    position: absolute;
+                                    top: 13%;
+                                    left: 52%;
+                                }
+                                &:nth-of-type(4) {
+                                    position: absolute;
+                                    top: 5%;
+                                    left: 47%;
+                                }
+                                &:nth-of-type(5) {
+                                    @include animation(star-move 17s ease infinite);
+                                    position: absolute;
+                                    top: 34%;
+                                    left: 32%;
+                                }
+                                &:nth-of-type(6) {
+                                    position: absolute;
+                                    top: 26%;
+                                    left: 80%;
+                                } 
+                                &:nth-of-type(7) {
+                                    @include animation(star-move 13s ease-in-out infinite);
+                                    position: absolute;
+                                    top: 33%;
+                                    left: 8%;
+                                }     
+                            }
+                            &.big {
+                                position: absolute;
+                                display: inline-block;
+                                width: 2px;
+                                height: 2px;
+                                background-color: $white;
+                                &:nth-of-type(8) {
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 45%;
+                                } 
+                                &:nth-of-type(9) {
+                                    @include animation(star-move 12s ease infinite);
+                                    position: absolute;
+                                    top: 22%;
+                                    left: 15%;
+                                } 
+                                &:nth-of-type(10) {
+                                    position: absolute;
+                                    top: 55%;
+                                    left: 87%;
+                                }
+                            }
+                        }
+                    }
+                    &.second {
+                        position: absolute;
+                        .wave {
+                            height: 1px;
+                            position: absolute;
+                            background-color: $white;
+                            border-radius: 1px;
+                            top: 68%;
+                            &.long {
+                                @include animation(wave 4s ease-in-out infinite alternate);
+                                width: 48%;
+                                left: 23%;
+                                margin-top: 0.5rem;
+                                opacity: 0.3;
+                                &:nth-of-type(2) {
+                                    margin-top: 1rem;
+                                    left: 35%;
+                                }
+                            }
+                            &.middle {
+                                @include animation(wave 3s ease-in-out infinite alternate);
+                                width: 34%;
+                                left: 28%;
+                                margin-top: 1.5rem;
+                                opacity: 0.5;
+                                &:nth-of-type(4) {
+                                    left: 42%;
+                                    margin-top: 2.0rem;
+                                }
+                            }
+                            &.short {
+                                @include animation(wave 2s ease-in-out infinite alternate);
+                                width: 25%;
+                                left: 32%;
+                                margin-top: 3rem;
+                                opacity: 0.8;
+                                &:nth-of-type(6) {
+                                    width: 20%;
+                                    left: 44%;
+                                    margin-top: 4rem;
+                                }
+                                &:nth-of-type(7) {
+                                    width: 13%;
+                                    left: 39%;
+                                    margin-top: 5rem;
+                                }
+                            }
+                        }
+                    }
+                    &.third {
+                        position: absolute;
+                        background: url('../../images/section0/clock-back-2.png');
+                        background-position: center;
+                        background-size: cover;
+                        .clock-title {
+                            opacity: 0.7;
+                            width: 100%;
+                            text-align: center;
+                            font-family: 'Alex Brush', cursive;
+                            color: $font-white;
+                            font-size: 3rem;
+                            line-height: 3.2rem;
+                            position: absolute;
+                            top: 12%;
+                            text-shadow: 0 0 5px $white;
+                        }
+                    }
+                }
+            }
+        }
+        .clock-flip-btn {
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            position: absolute;
+            width: 5rem;
+            height: 6rem;
+            bottom: 0;
+            .clock-btn {
+                @include animation(bounce 4s 3s infinite);
+                @include linear-bg-303deg();
+                width: 2rem;
+                height: 2rem;
+                border: 1px solid $white;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .click-me {
+                opacity: 0;
+                @include flexbox();
+                @include justify-content(center);
+                margin-top: 0.8rem;
+                color: $main-color;
+                font-size: 0.9rem;
+                font-family: 'Copperplate Gothic Light';
+                padding: 0.2rem 0.3rem;
+                width: 5rem;
+                border-radius: 2rem;
+                text-align: center;
+                background-color: $sub-color;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    margin-top: -0.5rem;
+                    border-top: 6px solid $sub-color;
+                    border-left: 6px solid $sub-color;
+                    @include transform(rotate(45deg));
+                }
             }
         }
     }
@@ -119,10 +520,12 @@
             }
         }
     }
-    .show-nav-sns {
+    .show-nav {
         display: none;
     }
-    .show-nav {
+}
+.mobile-nav-sns {
+    .show-nav-sns {
         display: none;
     }
 }

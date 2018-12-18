@@ -10,7 +10,7 @@
     }
 }
 .section {
-    background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,12,12,1) 100%);
+    background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
     background-color: $main-color;
 }
 
@@ -79,8 +79,9 @@
                         width: 50%;
                         font-family: 'Nanum Myeongjo', serif;
                         color: $font-white;
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                         line-height: 2rem;
+                        font-weight: bold;
                     }
                     .card-subtitle {
                         @include text-overflow(ellipsis);
