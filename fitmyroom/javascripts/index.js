@@ -274,4 +274,7 @@ $(document).ready(function() {
 		parallaxTwo();
 		parallaxThree();
 	});
+	$(window).on('resize', function() {
+        resetSize();
+    });
 });
