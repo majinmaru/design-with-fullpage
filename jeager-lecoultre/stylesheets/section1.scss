@@ -15,17 +15,129 @@
 		bottom: 0;
 	}
 }
-
+@-webkit-keyframes medal {
+    0%{margin-bottom: 0;}
+    50%{margin-bottom: -4px;}
+    100%{margin-bottom: 0;}
+}
+@-moz-keyframes medal {
+    0%{margin-bottom: 0;}
+    50%{margin-bottom: -4px;}
+    100%{margin-bottom: 0;}
+}
+@-o-keyframes medal {
+    0%{margin-bottom: 0;}
+    50%{margin-bottom: -4px;}
+    100%{margin-bottom: 0;}
+}
+@keyframes medal {
+    0%{margin-bottom: 0;}
+    50%{margin-bottom: -4px;}
+    100%{margin-bottom: 0;}
+}
+@-webkit-keyframes svg {
+    to {stroke-dashoffset: 0;}
+}
+@-moz-keyframes svg {
+    to {stroke-dashoffset: 0;}
+}
+@-o-keyframes svg {
+    to {stroke-dashoffset: 0;}
+}
+@keyframes svg {
+    to {stroke-dashoffset: 0;}
+}
+@-webkit-keyframes watch {
+    to {transform: rotate(360deg);}
+}
+@-moz-keyframes watch {
+    to {transform: rotate(360deg);}
+}
+@-o-keyframes watch {
+    to {transform: rotate(360deg);}
+}
+@keyframes watch {
+    to {transform: rotate(360deg);}
+}
 .section {
     background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
     background-color: $main-color;
 }
-
 #section1 {
-    background: url('../../images/section1/section1bg.png'), radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
-    background-size: contain, 100%;
+    background: radial-gradient(circle, rgba(4,20,25,1) 0%, rgba(4,20,25,1) 55%, rgba(4,12,12,1) 100%);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    background-position: center;
+    .section1-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .bg1{
+            opacity: 0.5;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                @include animation(watch 5s linear infinite);
+                position: absolute;
+                width: 9%;
+                left: 7%;
+                bottom: 11%;
+            }
+        }
+        .bg2 {
+            width: 100%;
+            height: 20%;
+            bottom: 0;
+            position: absolute;
+            background: url('../../images/section1/section1bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .bg3 {
+            @include animation(svg 10s linear infinite);
+            opacity: 0.3;
+            position: absolute;
+            right: -2%;
+            bottom: 10%;
+            width: 300px;
+            height: 300px;
+            stroke-width: 1;
+            stroke-dasharray: 9, 10;
+            stroke-dashoffset: -400;
+            fill: none;
+            stroke: $white;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .bg4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            img {
+                @include animation(medal 4s ease infinite);
+                position: absolute;
+                width: 13%;
+                right: 9%;
+                bottom: 5%;
+            }
+            .medal-shadow {
+                @include box-shadow(0 0 8px 5px#010607);
+                opacity: 0.7;
+                position: absolute;
+                width: 7%;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: #010607;
+                right: 12%;
+                bottom: 3%;
+            }
+        }
+        
+    }
     .fp-tableCell {
         display: block;
     }
@@ -116,6 +228,17 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #section1 {
+        .section1-bg {
+            .bg1 {
+                display: none;
+            }
+            .bg3 {
+                display: none;
+            }
+            .bg4 {
+                display: none;
+            }
+        }
         .history {
             width: 80%;
             margin-left: 10%;

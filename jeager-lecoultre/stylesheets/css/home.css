@@ -231,7 +231,7 @@ template { display: none; }
 #section0 .intro .clock .clock-back .layer.second .wave.short:nth-of-type(6) { width: 20%; left: 44%; margin-top: 4rem; }
 #section0 .intro .clock .clock-back .layer.second .wave.short:nth-of-type(7) { width: 13%; left: 39%; margin-top: 5rem; }
 #section0 .intro .clock .clock-back .layer.third { position: absolute; background: url("../../images/section0/clock-back-2.png"); background-position: center; background-size: cover; }
-#section0 .intro .clock .clock-back .layer.third .clock-title { opacity: 0.7; width: 100%; text-align: center; font-family: 'Alex Brush', cursive; color: #ccdadb; font-size: 3rem; line-height: 3.2rem; position: absolute; top: 12%; text-shadow: 0 0 5px #ccdadb; }
+#section0 .intro .clock .clock-back .layer.third .clock-title { opacity: 0.7; width: 100%; text-align: center; font-family: 'Alex Brush', cursive; color: #ccdadb; font-size: 3rem; line-height: 3.2rem; position: absolute; top: 12%; }
 #section0 .intro .clock-flip-btn { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; position: absolute; width: 5rem; height: 6rem; bottom: 0; }
 #section0 .intro .clock-flip-btn .clock-btn { -webkit-animation: bounce 4s 3s infinite; -moz-animation: bounce 4s 3s infinite; -o-animation: bounce 4s 3s infinite; animation: bounce 4s 3s infinite; background: -webkit-linear-gradient(147deg, #345667, #393660, #432151, #1f2944); background: -o-linear-gradient(147deg, #345667, #393660, #432151, #1f2944); background: linear-gradient(303deg, #345667, #393660, #432151, #1f2944); width: 2rem; height: 2rem; border: 1px solid #ccdadb; border-radius: 50%; cursor: pointer; }
 #section0 .intro .clock-flip-btn .click-me { opacity: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; margin-top: 0.8rem; color: #041419; font-size: 0.9rem; font-family: 'Copperplate Gothic Light'; padding: 0.2rem 0.3rem; width: 5rem; border-radius: 2rem; text-align: center; background-color: #b8ced3; }
@@ -297,9 +297,38 @@ template { display: none; }
 @keyframes from-bottom { 0% { opacity: 0; bottom: -3px; }
   50% { opacity: 0.5; bottom: -1.5px; }
   100% { opacity: 1; bottom: 0; } }
+@-webkit-keyframes medal { 0% { margin-bottom: 0; }
+  50% { margin-bottom: -4px; }
+  100% { margin-bottom: 0; } }
+@-moz-keyframes medal { 0% { margin-bottom: 0; }
+  50% { margin-bottom: -4px; }
+  100% { margin-bottom: 0; } }
+@-o-keyframes medal { 0% { margin-bottom: 0; }
+  50% { margin-bottom: -4px; }
+  100% { margin-bottom: 0; } }
+@keyframes medal { 0% { margin-bottom: 0; }
+  50% { margin-bottom: -4px; }
+  100% { margin-bottom: 0; } }
+@-webkit-keyframes svg { to { stroke-dashoffset: 0; } }
+@-moz-keyframes svg { to { stroke-dashoffset: 0; } }
+@-o-keyframes svg { to { stroke-dashoffset: 0; } }
+@keyframes svg { to { stroke-dashoffset: 0; } }
+@-webkit-keyframes watch { to { transform: rotate(360deg); } }
+@-moz-keyframes watch { to { transform: rotate(360deg); } }
+@-o-keyframes watch { to { transform: rotate(360deg); } }
+@keyframes watch { to { transform: rotate(360deg); } }
 .section { background: radial-gradient(circle, #041419 0%, #041419 55%, #040c0c 100%); background-color: #041419; }
 
-#section1 { background: url("../../images/section1/section1bg.png"), radial-gradient(circle, #041419 0%, #041419 55%, #040c0c 100%); background-size: contain, 100%; background-repeat: no-repeat; background-position: bottom, center; }
+#section1 { background: radial-gradient(circle, #041419 0%, #041419 55%, #040c0c 100%); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#section1 .section1-bg { width: 100%; height: 100%; position: absolute; }
+#section1 .section1-bg .bg1 { opacity: 0.5; position: absolute; width: 100%; height: 100%; }
+#section1 .section1-bg .bg1 img { -webkit-animation: watch 5s linear infinite; -moz-animation: watch 5s linear infinite; -o-animation: watch 5s linear infinite; animation: watch 5s linear infinite; position: absolute; width: 9%; left: 7%; bottom: 11%; }
+#section1 .section1-bg .bg2 { width: 100%; height: 20%; bottom: 0; position: absolute; background: url("../../images/section1/section1bg.png"); background-size: cover; background-repeat: no-repeat; background-position: top; }
+#section1 .section1-bg .bg3 { -webkit-animation: svg 10s linear infinite; -moz-animation: svg 10s linear infinite; -o-animation: svg 10s linear infinite; animation: svg 10s linear infinite; opacity: 0.3; position: absolute; right: -2%; bottom: 10%; width: 300px; height: 300px; stroke-width: 1; stroke-dasharray: 9, 10; stroke-dashoffset: -400; fill: none; stroke: #ccdadb; }
+#section1 .section1-bg .bg3 svg { width: 100%; height: 100%; }
+#section1 .section1-bg .bg4 { position: absolute; width: 100%; height: 100%; }
+#section1 .section1-bg .bg4 img { -webkit-animation: medal 4s ease infinite; -moz-animation: medal 4s ease infinite; -o-animation: medal 4s ease infinite; animation: medal 4s ease infinite; position: absolute; width: 13%; right: 9%; bottom: 5%; }
+#section1 .section1-bg .bg4 .medal-shadow { -webkit-box-shadow: 0 0 8px 5px #010607; box-shadow: 0 0 8px 5px #010607; opacity: 0.7; position: absolute; width: 7%; height: 1rem; border-radius: 50%; background-color: #010607; right: 12%; bottom: 3%; }
 #section1 .fp-tableCell { display: block; }
 #section1 .history { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; width: 50%; height: auto; position: relative; top: 25%; margin-left: 25%; background-image: url("../../images/section1/bg-1833.png"); background-size: 40%; background-position: right bottom; background-repeat: no-repeat; }
 #section1 .history .history-image-box { width: 30%; display: block; position: relative; }
@@ -313,7 +342,10 @@ template { display: none; }
 #section1 .timeline li:hover .year { color: #ccdadb; border-bottom: 0.3rem solid #ccdadb; text-shadow: 2px 2px 4px #010405; top: -2px; }
 #section1 .timeline li.active .year { color: #ccdadb; border-bottom: 0.3rem solid #ccdadb; text-shadow: 2px 2px 4px #010405; top: -2px; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) { #section1 .history { width: 80%; margin-left: 10%; display: block; top: 14%; background-size: 0; }
+@media screen and (min-width: 320px) and (max-width: 768px) { #section1 .section1-bg .bg1 { display: none; }
+  #section1 .section1-bg .bg3 { display: none; }
+  #section1 .section1-bg .bg4 { display: none; }
+  #section1 .history { width: 80%; margin-left: 10%; display: block; top: 14%; background-size: 0; }
   #section1 .history .history-image-box { width: 55%; margin-left: 22.5%; }
   #section1 .history .history-description { width: 100%; margin-top: 1.3rem; }
   #section1 .history .history-description p { font-size: 0.8rem; line-height: 1.8rem; }

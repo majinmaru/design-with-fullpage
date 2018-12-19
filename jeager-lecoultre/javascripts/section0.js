@@ -9,7 +9,7 @@ $(document).ready(function() {
 			$(".intro .clock-flip-btn .click-me").animate({
 				opacity: 1
 			}, 300);
-		}, 6000);
+		}, 3000);
 	});
 	$(".intro .clock-flip-btn .clock-btn").click(function(e){
 		e.stopPropagation;
