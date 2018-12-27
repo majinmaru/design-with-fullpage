@@ -1,0 +1,8 @@
+@font-face { font-family: 'impactregular'; src: url("../../../font/impact_0-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; background-color: #f8f8f8; width: 100%; border-bottom: 1px solid #0c0c90; }
+.header .nav { -webkit-text-decoration: none; text-decoration: none; background-image: -webkit-radial-gradient(circle, transparent 20%, transparent 21%); background-image: -o-radial-gradient(circle, transparent 20%, transparent 21%); background-image: radial-gradient(circle, transparent 20%, transparent 21%); -webkit-background-size: 7px 7px; -moz-background-size: 7px 7px; background-size: 7px 7px; background-position: 0 0; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; width: 10%; color: #919191; font-family: 'impactregular'; text-align: center; font-size: 1rem; margin: 2rem 2rem; line-height: 4rem; }
+.header .nav:hover { background-image: -webkit-radial-gradient(circle, #e8e8e8 20%, transparent 21%); background-image: -o-radial-gradient(circle, #e8e8e8 20%, transparent 21%); background-image: radial-gradient(circle, #e8e8e8 20%, transparent 21%); -webkit-background-size: 7px 7px; -moz-background-size: 7px 7px; background-size: 7px 7px; background-position: 0 0; background-repeat: repeat; color: #0c0c90; }
+
+.nav-pointer { position: absolute; width: 1.4rem; height: 1.4rem; background-color: #0c0c90; border-radius: 1.4rem; margin-top: -0.7rem; left: 49.2%; display: none; }
+
+/*# sourceMappingURL=header.css.map */
