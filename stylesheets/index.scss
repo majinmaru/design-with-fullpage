@@ -1,3 +1,222 @@
 @import 'base/color.scss';
 @import 'base/font.scss';
 @import 'base/mixin.scss';
+body {
+	background-color: $main-white;
+}
+.text-ad {
+	height: 1.1rem;
+	background-color: $main-blue;
+	margin-top: 1rem;
+	overflow: hidden;
+	.ad-ment {
+		color: $main-white;
+		font-family: 'Swagger';
+		line-height: 1.1rem;
+	}
+}
+.wrapper {
+	display: block;
+	width: 100%;
+	height: 65vh;
+	background-color: $main-white;
+	overflow: hidden;
+	//border-top: 1px solid $main-blue;
+	border-bottom: 1px solid $main-blue;
+	.main-contents {
+		@include flexbox();
+		.first-wall {
+			@include transform(rotateX(20deg) rotateY(-35deg) translateX(4rem) translateY(1rem) scale(1.1));
+			@include box-sizing(border-box);
+			@include flexbox();
+			width: 70%;
+			height: 90vh;
+			.part {
+				@include flexbox();
+				@include flex-direction(column);
+				&.one {
+					@include transform(translatey(-6rem));
+					width: 35%;
+					.fishtank {
+						@include box-sizing(border-box);
+						border: 1px solid $main-blue;
+						width: 74%;
+						height: 8rem;
+						display: block;
+						margin-top: 1rem;
+						background-image: url('../../images/index/tank-wave.svg');
+						background-size: contain;
+						background-position: bottom;
+						background-repeat: no-repeat;
+						position: relative;
+						overflow: hidden;
+						.tank-inner-bottom {
+							@include box-sizing(border-box);
+							@include transform(skewX(60deg) translatex(-0.8rem));
+							border-top: 1px solid $main-blue;
+							border-right: 1px solid $main-blue;
+							width: 100%;
+							height: 1rem;
+							position: absolute;
+							bottom: 0;
+							background-color: $main-white;
+						}
+						.tank-inner-right {
+							@include box-sizing(border-box);
+							border-left: 1px solid $main-blue;
+							width: 1.6rem;
+							height: 100%;
+							background-color: $main-white;
+							position: absolute;
+							right: 0;
+						}
+					}
+					.photo {
+						@include box-sizing(border-box);
+						border: 1px solid $main-blue;
+						width: 34%;
+						height: 5rem;
+						margin-top: 2rem;
+						margin-left: 7rem;
+					}
+					.text-ad {
+						&.first {
+							width: 50%;
+							margin-left: 7rem;
+						}
+					}
+					.dots {
+						@include background-dot($main-blue);
+						@include background-size(8px 8px);
+						background-position: 0 0;
+						width: 5rem;
+						height: 13rem;
+						display: inline-block;
+					}
+					.poster {
+						width: 50%;
+						height: 13rem;
+						margin-top: -11rem;
+						border: 1px solid $main-blue;
+						margin-left: 7rem;
+					}
+				}
+				&.two {
+					width: 65%;
+					.wave {
+						width: 8rem;
+						height: 2.5rem;
+						margin-top: 3rem;
+						background-image: url('../../images/index/triangle-wave.svg');
+						background-size: 21%;
+					}
+					.memo {
+						width: 4.5rem;
+						margin-top: 1.5rem;
+						&.bottom {
+							margin-left: 6rem;
+							margin-top: 2rem;
+						}
+						img {
+							width: 100%;
+						}
+					}
+					.mirror {
+						width: 12rem;
+						height: 12rem;
+						border-radius: 12rem;
+						border: 2px solid $main-blue;
+						position: absolute;
+						right: 12%;
+					}
+					.banner {
+						@include flexbox();
+						@include flex-direction(row);
+						@include justify-content(space-between);
+						width: 80%;
+						height: 4.8rem;
+						border: 3px solid $main-blue;
+						margin-top: 1.5rem;
+						&.first {
+							cursor: pointer;
+							background-color: $gray-blue;
+							.sub {
+								width: 44%;
+								font-family: 'Swagger';
+								color: $main-blue;
+								font-size: 1.8rem;
+								line-height: 2rem;
+								text-align: left;
+								padding: 0.5rem 2rem;
+								letter-spacing: 0.1rem;
+							}
+							.main {
+								width: 56%;
+								font-family: 'Swagger';
+								color: $main-blue;
+								font-size: 3rem;
+								text-align: right;
+								padding: 1rem 2rem 1rem 0;
+							}
+						}
+					}
+					.poster-3D {
+						width: 52%;
+						height: 10rem;
+						border: 3px solid $main-blue;
+						margin-left: 13rem;
+						margin-top: -5.5rem;
+					}
+				}
+			}			
+		}
+		.second-wall {
+			@include transform(rotatex(20deg) rotatey(35deg) translatey(-6rem) translateZ(-3rem));
+			width: 7%;
+			height: 90vh;
+			background-color: $gray-blue;
+			border-left: 1px solid $main-blue;
+			border-right: 1px solid $main-blue;
+		}
+		.third-wall {
+			@include transform(rotateX(20deg) rotateY(-35deg) translateX(1rem) translateY(-3rem) scale(1.1));
+			@include flexbox();
+			width: 23%;
+			overflow: hidden;
+			.part{
+				width: 50%;
+				&.one {
+					.exhibition-poster {
+						width: 90%;
+						height: 15rem;
+						border: 3px solid $main-blue;
+						margin-top: 9rem;
+					}
+					.text-ad {
+						&.second {
+							width: 94%;
+						}
+					}
+				}
+				&.two {
+					.photo {
+						@include box-sizing(border-box);
+						border: 1px solid $main-blue;
+						width: 100%;
+						height: 5rem;
+						margin-top: 9rem;
+						margin-left: 2rem;
+					}
+					.poster {
+						@include box-sizing(border-box);
+						border: 1px solid $main-blue;
+						width: 100%;
+						height: 14rem;
+						margin-top: 2rem;
+						margin-left: 2rem;
+					}
+				}
+			}
+		}
+	}
+}

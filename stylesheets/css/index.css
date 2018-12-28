@@ -1,3 +1,45 @@
+@font-face { font-family: 'impactregular'; src: url("../../../font/impact_0-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-3Light'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-4Regular'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-9Black'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Swagger'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Swagger.woff") format("woff"); font-weight: normal; font-style: normal; }
+body { background-color: #f8f8f8; }
 
+.text-ad { height: 1.1rem; background-color: #0c0c90; margin-top: 1rem; overflow: hidden; }
+.text-ad .ad-ment { color: #f8f8f8; font-family: 'Swagger'; line-height: 1.1rem; }
+
+.wrapper { display: block; width: 100%; height: 65vh; background-color: #f8f8f8; overflow: hidden; border-bottom: 1px solid #0c0c90; }
+.wrapper .main-contents { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.wrapper .main-contents .first-wall { -webkit-transform: rotateX(20deg) rotateY(-35deg) translateX(4rem) translateY(1rem) scale(1.1); -ms-transform: rotateX(20deg) rotateY(-35deg) translateX(4rem) translateY(1rem) scale(1.1); transform: rotateX(20deg) rotateY(-35deg) translateX(4rem) translateY(1rem) scale(1.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; width: 70%; height: 90vh; }
+.wrapper .main-contents .first-wall .part { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; }
+.wrapper .main-contents .first-wall .part.one { -webkit-transform: translatey(-6rem); -ms-transform: translatey(-6rem); transform: translatey(-6rem); width: 35%; }
+.wrapper .main-contents .first-wall .part.one .fishtank { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #0c0c90; width: 74%; height: 8rem; display: block; margin-top: 1rem; background-image: url("../../images/index/tank-wave.svg"); background-size: contain; background-position: bottom; background-repeat: no-repeat; position: relative; overflow: hidden; }
+.wrapper .main-contents .first-wall .part.one .fishtank .tank-inner-bottom { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transform: skewX(60deg) translatex(-0.8rem); -ms-transform: skewX(60deg) translatex(-0.8rem); transform: skewX(60deg) translatex(-0.8rem); border-top: 1px solid #0c0c90; border-right: 1px solid #0c0c90; width: 100%; height: 1rem; position: absolute; bottom: 0; background-color: #f8f8f8; }
+.wrapper .main-contents .first-wall .part.one .fishtank .tank-inner-right { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-left: 1px solid #0c0c90; width: 1.6rem; height: 100%; background-color: #f8f8f8; position: absolute; right: 0; }
+.wrapper .main-contents .first-wall .part.one .photo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #0c0c90; width: 34%; height: 5rem; margin-top: 2rem; margin-left: 7rem; }
+.wrapper .main-contents .first-wall .part.one .text-ad.first { width: 50%; margin-left: 7rem; }
+.wrapper .main-contents .first-wall .part.one .dots { background-image: -webkit-radial-gradient(circle, #0c0c90 20%, transparent 21%); background-image: -o-radial-gradient(circle, #0c0c90 20%, transparent 21%); background-image: radial-gradient(circle, #0c0c90 20%, transparent 21%); -webkit-background-size: 8px 8px; -moz-background-size: 8px 8px; background-size: 8px 8px; background-position: 0 0; width: 5rem; height: 13rem; display: inline-block; }
+.wrapper .main-contents .first-wall .part.one .poster { width: 50%; height: 13rem; margin-top: -11rem; border: 1px solid #0c0c90; margin-left: 7rem; }
+.wrapper .main-contents .first-wall .part.two { width: 65%; }
+.wrapper .main-contents .first-wall .part.two .wave { width: 8rem; height: 2.5rem; margin-top: 3rem; background-image: url("../../images/index/triangle-wave.svg"); background-size: 21%; }
+.wrapper .main-contents .first-wall .part.two .memo { width: 4.5rem; margin-top: 1.5rem; }
+.wrapper .main-contents .first-wall .part.two .memo.bottom { margin-left: 6rem; margin-top: 2rem; }
+.wrapper .main-contents .first-wall .part.two .memo img { width: 100%; }
+.wrapper .main-contents .first-wall .part.two .mirror { width: 12rem; height: 12rem; border-radius: 12rem; border: 2px solid #0c0c90; position: absolute; right: 12%; }
+.wrapper .main-contents .first-wall .part.two .banner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; width: 80%; height: 4.8rem; border: 3px solid #0c0c90; margin-top: 1.5rem; }
+.wrapper .main-contents .first-wall .part.two .banner.first { cursor: pointer; background-color: #d9d9e4; }
+.wrapper .main-contents .first-wall .part.two .banner.first .sub { width: 44%; font-family: 'Swagger'; color: #0c0c90; font-size: 1.8rem; line-height: 2rem; text-align: left; padding: 0.5rem 2rem; letter-spacing: 0.1rem; }
+.wrapper .main-contents .first-wall .part.two .banner.first .main { width: 56%; font-family: 'Swagger'; color: #0c0c90; font-size: 3rem; text-align: right; padding: 1rem 2rem 1rem 0; }
+.wrapper .main-contents .first-wall .part.two .poster-3D { width: 52%; height: 10rem; border: 3px solid #0c0c90; margin-left: 13rem; margin-top: -5.5rem; }
+.wrapper .main-contents .second-wall { -webkit-transform: rotatex(20deg) rotatey(35deg) translatey(-6rem) translateZ(-3rem); -ms-transform: rotatex(20deg) rotatey(35deg) translatey(-6rem) translateZ(-3rem); transform: rotatex(20deg) rotatey(35deg) translatey(-6rem) translateZ(-3rem); width: 7%; height: 90vh; background-color: #d9d9e4; border-left: 1px solid #0c0c90; border-right: 1px solid #0c0c90; }
+.wrapper .main-contents .third-wall { -webkit-transform: rotateX(20deg) rotateY(-35deg) translateX(1rem) translateY(-3rem) scale(1.1); -ms-transform: rotateX(20deg) rotateY(-35deg) translateX(1rem) translateY(-3rem) scale(1.1); transform: rotateX(20deg) rotateY(-35deg) translateX(1rem) translateY(-3rem) scale(1.1); display: -webkit-box; display: -ms-flexbox; display: flex; width: 23%; overflow: hidden; }
+.wrapper .main-contents .third-wall .part { width: 50%; }
+.wrapper .main-contents .third-wall .part.one .exhibition-poster { width: 90%; height: 15rem; border: 3px solid #0c0c90; margin-top: 9rem; }
+.wrapper .main-contents .third-wall .part.one .text-ad.second { width: 94%; }
+.wrapper .main-contents .third-wall .part.two .photo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #0c0c90; width: 100%; height: 5rem; margin-top: 9rem; margin-left: 2rem; }
+.wrapper .main-contents .third-wall .part.two .poster { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #0c0c90; width: 100%; height: 14rem; margin-top: 2rem; margin-left: 2rem; }
 
 /*# sourceMappingURL=index.css.map */

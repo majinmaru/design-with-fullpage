@@ -57,9 +57,16 @@
      -moz-background-size: $val;
           background-size: $val;
 }
-
+@mixin perspective($val) {
+  -webkit-perspective: $val;
+          perspective: $val;
+}
+@mixin transform-style($val) {
+  -webkit-transform-style: $val;
+          transform-style: $val;
+}
 //custom//
-@mixin nav-background-dot($color){
+@mixin background-dot($color){
   background-image: -webkit-radial-gradient(circle, $color 20%, transparent 21%);
   background-image: -o-radial-gradient(circle, $color 20%, transparent 21%);
   background-image: radial-gradient(circle, $color 20%, transparent 21%);

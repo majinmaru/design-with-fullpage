@@ -7,9 +7,10 @@
 	background-color: $main-white;
 	width: 100%;
 	border-bottom: 1px solid $main-blue;
+	z-index: 999;
 	.nav {
 		@include text-decoration(none);
-		@include nav-background-dot(transparent);
+		@include background-dot(transparent);
 		@include background-size(7px 7px);
 		background-position: 0 0;
 		@include transition(all 0.5s ease);
@@ -21,7 +22,7 @@
 		margin: 2rem 2rem;
 		line-height: 4rem;
 		&:hover {
-			@include nav-background-dot($faint-gray);
+			@include background-dot($faint-gray);
 			@include background-size(7px 7px);
 			background-position: 0 0;
 			background-repeat: repeat;
@@ -38,4 +39,5 @@
 	margin-top: -0.7rem;
 	left: 49.2%;
 	display: none;
+	z-index: 1000;
 }
