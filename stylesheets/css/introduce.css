@@ -1,0 +1,41 @@
+@font-face { font-family: 'impactregular'; src: url("../../../font/impact_0-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-3Light'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-4Regular'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-9Black'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Swagger'; src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Swagger.woff") format("woff"); font-weight: normal; font-style: normal; }
+.header .nav:nth-of-type(1) { color: #0c0c90; }
+
+.nav-pointer { position: absolute; width: 1.4rem; height: 1.4rem; background-color: #0c0c90; border-radius: 1.4rem; margin-top: -0.7rem; left: 35.3%; display: block; z-index: 1000; }
+
+body { background-color: #f8f8f8; }
+
+.wrapper { width: 100%; }
+.wrapper .section-one { width: 100%; height: 70vh; margin-top: 10%; }
+.wrapper .section-one .info-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
+.wrapper .section-one .info-wrapper .waves { width: 15%; background-image: url("../../images/introduce/waves.svg"); background-size: cover; }
+.wrapper .section-one .info-wrapper .brief { font-family: 'S-CoreDream-4Regular'; width: 25%; margin-left: 2rem; }
+.wrapper .section-one .info-wrapper .brief .name { color: #0c0c90; font-size: 1.2rem; }
+.wrapper .section-one .info-wrapper .brief .born { color: #595959; font-size: 0.9rem; margin-top: 1rem; }
+.wrapper .section-one .info-wrapper .brief .worked { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin-top: 3rem; }
+.wrapper .section-one .info-wrapper .brief .worked .timeline { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; width: 50%; line-height: 1.8rem; }
+.wrapper .section-one .info-wrapper .brief .worked .timeline .year { color: #595959; font-size: 0.9rem; }
+.wrapper .section-one .info-wrapper .brief .worked .companies { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: column; -ms-flex-direction: column; flex-direction: column; width: 50%; line-height: 1.8rem; }
+.wrapper .section-one .info-wrapper .brief .worked .companies .company { color: #595959; font-size: 0.9rem; }
+.wrapper .profile { width: 30%; position: absolute; right: 25%; top: 38%; }
+.wrapper .profile .face { width: 100%; }
+.wrapper .profile .name { position: absolute; width: 100%; top: 35%; }
+.wrapper .section-two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; width: 100%; height: 80vh; background-color: #f8f8f8; margin-top: 12rem; z-index: 10; box-shadow: 0 0 4rem rgba(74, 74, 74, 0.3); }
+.wrapper .section-two .square { position: absolute; background-color: #0c0c90; width: 2rem; height: 2rem; margin-top: -1rem; }
+.wrapper .section-two .capacity { width: 100%; }
+.wrapper .section-two .capacity .design-tabs { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; padding: 9rem 15%; }
+.wrapper .section-two .capacity .design-tabs .design { width: 15%; text-align: center; color: #a0a0a0; font-family: 'S-CoreDream-6Bold'; font-size: 1.2rem; cursor: pointer; }
+.wrapper .section-two .capacity .design-tabs .design:hover { color: #0c0c90; }
+.wrapper .section-two .capacity .description { width: 100%; }
+.wrapper .section-two .capacity .description .ability { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 15%; width: 70%; }
+.wrapper .section-two .capacity .description .ability .ability-image { width: 40%; }
+.wrapper .section-two .capacity .description .ability .ability-text { width: 60%; font-family: 'S-CoreDream-4Regular'; color: #595959; font-size: 1rem; line-height: 2rem; margin-left: 5rem; }
+
+/*# sourceMappingURL=introduce.css.map */

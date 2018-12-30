@@ -65,6 +65,11 @@
   -webkit-transform-style: $val;
           transform-style: $val;
 }
+@mixin transform-origin($val...){
+  -webkit-transform-origin: $val;
+      -ms-transform-origin: $val;
+          transform-origin: $val;
+}
 //custom//
 @mixin background-dot($color){
   background-image: -webkit-radial-gradient(circle, $color 20%, transparent 21%);
