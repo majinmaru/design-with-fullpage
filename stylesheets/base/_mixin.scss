@@ -70,6 +70,10 @@
       -ms-transform-origin: $val;
           transform-origin: $val;
 }
+@mixin filter($val) {
+  -webkit-filter: $val;
+          filter: $val;
+}
 //custom//
 @mixin background-dot($color){
   background-image: -webkit-radial-gradient(circle, $color 20%, transparent 21%);

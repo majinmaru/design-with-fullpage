@@ -1,0 +1,101 @@
+@import 'base/color.scss';
+@import 'base/font.scss';
+@import 'base/mixin.scss';
+@keyframes arrow {
+	0%{ margin-top: 2rem; }
+	80%{ margin-top: 3rem; }
+	100%{ margin-top: 3rem; }
+}
+.header {
+	.nav:nth-of-type(2) {
+		color: $main-blue;
+	}
+}
+.nav-pointer {
+	position: absolute;
+	width: 1.4rem;
+	height: 1.4rem;
+	background-color: $main-blue;
+	border-radius: 1.4rem;
+	margin-top: -0.7rem;
+	left: 49.3%;
+	display: block;
+	z-index: 1000;
+}
+body {
+	background-color: $main-white;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+	.title {
+		margin-top: 5rem;
+		margin-right: 17%;
+		.brief {
+			font-family: 'S-CoreDream-4Regular';
+			color: $font-faint-gray;
+			font-size: 0.9rem;
+			text-align: right;
+			letter-spacing: 0.2rem;
+		}
+		.main-title {
+			font-family: 'S-CoreDream-8Heavy'; 
+			color: $main-blue;
+			font-size: 3.5rem;
+			text-align: right;
+			margin-bottom: 0.7rem;
+		}
+		.sub-title {
+			display: inline-block;
+			font-family: 'S-CoreDream-4Regular';
+			color: $main-white;
+			font-size: 1rem;
+			background-color: $main-blue;
+			padding: 0.1rem 0.5rem;
+			margin-top: 0.5rem;
+			text-align: right;
+			float: right;
+			clear: both;
+		}
+	}
+	.indicator {
+		position: absolute;
+		top: 2.5rem;
+		margin-left: 17%;
+		width: 4%;
+		.number {
+			width: 40%;
+			img {
+				width: 100%;
+			}
+		}
+		.arrow {
+			img {
+				@include animation(arrow 2s ease infinite);
+				width: 80%;
+				margin-top: 2rem;
+				margin-left: 5%;
+			}
+		}
+	}
+	.link {
+		width: 76%;
+		height: 3rem;
+		margin-left: 12%;
+		margin-top: 8%;
+		background-color: $gray-blue;
+		position: relative;
+		.link-button {
+			@include text-decoration(none);
+			font-family: 'S-CoreDream-4Regular';
+			color: $main-blue;
+			font-size: 1.4rem;
+			background-color: $main-white;
+			padding: 0.8rem;
+			margin-left: 5%;
+			margin-top: -0.3rem;
+			position: absolute;
+
+		}
+	}
+}
