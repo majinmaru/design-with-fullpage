@@ -9,6 +9,7 @@ $(document).ready(function() {
 	var autorun;
 	var sliderDuration = 300;
 	
+	slider.height(slides.find("img").height());
 	var stickyHeaderTop = $(".header").offset().top;
 	var stickyHeader = function() {
 		var scrollTop = $(window).scrollTop();
