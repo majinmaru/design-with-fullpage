@@ -9,6 +9,7 @@ $(document).ready(function() {
 	var autorun;
 	var sliderDuration = 300;
 	
+	slider.height(slides.find("img").height());
 	var stickyHeaderTop = $(".header").offset().top;
 	var stickyHeader = function() {
 		var scrollTop = $(window).scrollTop();
@@ -258,12 +259,6 @@ $(document).ready(function() {
 		$(".slide").eq(2).find("img").attr('src', 'images/PC/page2/pc-jumbo-2.png');
 		$(".slide").eq(3).find("img").attr('src', 'images/PC/page3/pc-jumbo-3.png');
 		$(".slider").height('21.8rem');
-	} else if (windowSize < 1024) {
-		$(".slide").eq(0).find("img").attr('src', 'images/index/mobile-jumbo-0.png');
-		$(".slide").eq(1).find("img").attr('src', 'images/page1/mobile-jumbo-1.png');
-		$(".slide").eq(2).find("img").attr('src', 'images/page2/mobile-jumbo-2.png');
-		$(".slide").eq(3).find("img").attr('src', 'images/page3/mobile-jumbo-3.png');
-		$(".slider").height('50.4vh');
 	}	
 	autorunSlider();	
 	parallaxOne();
