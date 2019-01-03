@@ -203,7 +203,7 @@ $(document).ready(function() {
 		}
 	}
 	function resetSize(){
-		slider.height(slides.find("img").height());
+		slider.height(slides.children("img").height());
 		slides.width(slider.width());
 		slideList.width(slides.width()*slides.length);
 	}
