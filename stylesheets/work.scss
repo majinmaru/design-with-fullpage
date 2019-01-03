@@ -95,7 +95,104 @@ body {
 			margin-left: 5%;
 			margin-top: -0.3rem;
 			position: absolute;
-
+		}
+	}
+	.section {
+		width: 76%;
+		margin-left: 12%;
+		position: relative;
+		&.one {
+			margin-top: 3rem;
+			.one-image {
+				width: 50%;
+				display: inline-block;
+				position: relative;
+				img {
+					width: 100%;
+				}
+			}
+			.card {
+				width: 33%;
+				padding: 5% 2%;
+				box-shadow: 2px 0 18px $gray-blue;
+				display: inline-block;
+				position: absolute;
+				background-color: $main-white;
+				right: 6%;
+				top: -17%;
+				z-index: 10;
+				.card-content {
+					width: 100%;
+					font-family: 'S-CoreDream-4Regular';
+					color: $font-gray;
+					text-align: right;
+					font-size: 1rem;
+					line-height: 2rem;
+				}
+				.wave {
+					position: absolute;
+					&.first {
+						width: 25%;
+						top: 1rem;
+						left: -10%;
+					}
+					&.second {
+						width: 20%;
+						right: 0;
+						bottom: -10%;
+					}
+					&.third {
+						width: 40%;
+						right: 0;
+						bottom: -15%;
+					}
+				}
+			}
+		}
+		&.two {
+			@include flexbox();
+			@include align-items(center);
+			margin-top: 7rem;
+			.two-content {
+				width: 50%;
+				color: $font-gray;
+				font-family: 'S-CoreDream-4Regular';
+				.two-title {
+					font-size: 1.2rem;
+					font-family: 'S-CoreDream-5Medium'; 
+				}
+				.two-wave {
+					width: 12%;
+					height: 1.5rem;
+					background-image: url('../../images/myworks/work-wave-long.svg');
+					background-repeat: no-repeat;
+					background-size: 180%;
+				}
+				.text {
+					font-size: 1rem;
+					line-height: 2rem;
+					margin-top: 1rem;
+					padding-right: 10%;
+				}
+			}
+			.two-image {
+				width: 50%;
+			}
+		}
+		&.three {
+			margin-top: 7rem;
+			.three-title {
+				color: $font-gray;
+				font-size: 1.2rem;
+				font-family: 'S-CoreDream-5Medium'; 
+			}
+			.three-wave {
+				width: 8%;
+				height: 1.5rem;
+				background-image: url('../../images/myworks/work-wave-long.svg');
+				background-repeat: no-repeat;
+				background-size: 150%;
+			}
 		}
 	}
 }

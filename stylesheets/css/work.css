@@ -26,5 +26,24 @@ body { background-color: #f8f8f8; }
 .wrapper .indicator .arrow img { -webkit-animation: arrow 2s ease infinite; animation: arrow 2s ease infinite; width: 80%; margin-top: 2rem; margin-left: 5%; }
 .wrapper .link { width: 76%; height: 3rem; margin-left: 12%; margin-top: 8%; background-color: #d9d9e4; position: relative; }
 .wrapper .link .link-button { -webkit-text-decoration: none; text-decoration: none; font-family: 'S-CoreDream-4Regular'; color: #0c0c90; font-size: 1.4rem; background-color: #f8f8f8; padding: 0.8rem; margin-left: 5%; margin-top: -0.3rem; position: absolute; }
+.wrapper .section { width: 76%; margin-left: 12%; position: relative; }
+.wrapper .section.one { margin-top: 3rem; }
+.wrapper .section.one .one-image { width: 50%; display: inline-block; position: relative; }
+.wrapper .section.one .one-image img { width: 100%; }
+.wrapper .section.one .card { width: 33%; padding: 5% 2%; box-shadow: 2px 0 18px #d9d9e4; display: inline-block; position: absolute; background-color: #f8f8f8; right: 6%; top: -17%; z-index: 10; }
+.wrapper .section.one .card .card-content { width: 100%; font-family: 'S-CoreDream-4Regular'; color: #595959; text-align: right; font-size: 1rem; line-height: 2rem; }
+.wrapper .section.one .card .wave { position: absolute; }
+.wrapper .section.one .card .wave.first { width: 25%; top: 1rem; left: -10%; }
+.wrapper .section.one .card .wave.second { width: 20%; right: 0; bottom: -10%; }
+.wrapper .section.one .card .wave.third { width: 40%; right: 0; bottom: -15%; }
+.wrapper .section.two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; align-items: center; margin-top: 7rem; }
+.wrapper .section.two .two-content { width: 50%; color: #595959; font-family: 'S-CoreDream-4Regular'; }
+.wrapper .section.two .two-content .two-title { font-size: 1.2rem; font-family: 'S-CoreDream-5Medium'; }
+.wrapper .section.two .two-content .two-wave { width: 12%; height: 1.5rem; background-image: url("../../images/myworks/work-wave-long.svg"); background-repeat: no-repeat; background-size: 180%; }
+.wrapper .section.two .two-content .text { font-size: 1rem; line-height: 2rem; margin-top: 1rem; padding-right: 10%; }
+.wrapper .section.two .two-image { width: 50%; }
+.wrapper .section.three { margin-top: 7rem; }
+.wrapper .section.three .three-title { color: #595959; font-size: 1.2rem; font-family: 'S-CoreDream-5Medium'; }
+.wrapper .section.three .three-wave { width: 8%; height: 1.5rem; background-image: url("../../images/myworks/work-wave-long.svg"); background-repeat: no-repeat; background-size: 150%; }
 
 /*# sourceMappingURL=work.css.map */

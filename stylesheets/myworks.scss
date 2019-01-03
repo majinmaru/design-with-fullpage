@@ -77,6 +77,9 @@ body {
 					color: $main-blue;
 					font-size: 2rem;
 					position: absolute;
+					background-color: $main-white;
+					padding: 0.2rem 0.5rem;
+					text-align: center;
 				}
 				.box-bg {
 					@include transition(all 0.3s ease-in);
