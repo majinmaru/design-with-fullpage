@@ -203,7 +203,7 @@ $(document).ready(function() {
 		}
 	}
 	function resetSize(){
-		
+		slider.height(slides.children("img").height());
 		slides.width(slider.width());
 		slideList.width(slides.width()*slides.length);
 	}
@@ -264,7 +264,8 @@ $(document).ready(function() {
 		$(".slide").eq(2).find("img").attr('src', 'images/page2/mobile-jumbo-2.png');
 		$(".slide").eq(3).find("img").attr('src', 'images/page3/mobile-jumbo-3.png');
 		$(".slider").height('50.4vh');
-	}	
+	}
+	resetSize();	
 	autorunSlider();	
 	parallaxOne();
 	parallaxTwo();
